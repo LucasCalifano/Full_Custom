@@ -1,0 +1,3 @@
+Command Line: /home/net/synopsys/installs/verdi/V-2023.12-SP2-1/platform/LINUXAMD64/bin/vfast -silent -del . -o /home/net/lu282362/full_custom/lab_2/fib_tb.vcd.fsdb -ft verilog /home/net/lu282362/full_custom/lab_2/fib_tb.vcd
+uname(Linux net1580 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Tue Jun 10 17:00:45 UTC 2025 x86_64)
+au time 0.037214 0.002221 0.006028 delta 24666112 24666112 total 215580672 215580672

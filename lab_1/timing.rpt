@@ -1,0 +1,521 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_soc' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path short
+        -delay max
+        -group reg2reg
+        -max_paths 10
+Design : riscv_soc
+Version: U-2022.12-SP6
+Date   : Fri Dec 27 19:55:26 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p75v125c   Library: saed32rvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[31]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[31]/D (SDFFARX1_RVT)              25.65      25.91 f
+  data arrival time                                                                     25.91
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[31]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -25.91
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           23.80
+
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[30]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[30]/D (SDFFARX1_RVT)              24.96      25.22 f
+  data arrival time                                                                     25.22
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[30]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -25.22
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           24.49
+
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[29]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[29]/D (SDFFARX1_RVT)              24.51      24.77 f
+  data arrival time                                                                     24.77
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[29]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -24.77
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           24.93
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[31]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[31]/D (SDFFARX1_RVT)              25.65      25.91 f
+  data arrival time                                                                     25.91
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[31]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -25.91
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           23.80
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[28]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[28]/D (SDFFARX1_RVT)              24.09      24.35 f
+  data arrival time                                                                     24.35
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[28]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -24.35
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           25.35
+
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[27]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[27]/D (SDFFARX1_RVT)              23.86      24.11 f
+  data arrival time                                                                     24.11
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[27]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -24.11
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           25.59
+
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[26]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[26]/D (SDFFARX1_RVT)              23.40      23.66 f
+  data arrival time                                                                     23.66
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[26]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -23.66
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           26.04
+
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[25]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[25]/D (SDFFARX1_RVT)              23.11      23.37 f
+  data arrival time                                                                     23.37
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[25]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -23.37
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           26.33
+  
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[28]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[28]/D (SDFFARX1_RVT)              24.09      24.35 f
+  data arrival time                                                                     24.35
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[28]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -24.35
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           25.35
+
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[24]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[24]/D (SDFFARX1_RVT)              22.67      22.93 f
+  data arrival time                                                                     22.93
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[24]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -22.93
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           26.78
+
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[23]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[23]/D (SDFFARX1_RVT)              22.40      22.66 f
+  data arrival time                                                                     22.66
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[23]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -22.66
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           27.04
+
+
+  Startpoint: u_soc/u_axi_tap/read_port_q_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: u_core/u_core/u_muldiv/mult_result_q_reg[22]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_soc          4000000               saed32rvt_ss0p75v125c
+  axi4_lite_tap      8000                  saed32rvt_ss0p75v125c
+  soc                35000                 saed32rvt_ss0p75v125c
+  riscv_top          4000000               saed32rvt_ss0p75v125c
+  riscv_core         140000                saed32rvt_ss0p75v125c
+  riscv_lsu          8000                  saed32rvt_ss0p75v125c
+  riscv_decode       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv       35000                 saed32rvt_ss0p75v125c
+  riscv_muldiv_DW02_mult_0
+                     35000                 saed32rvt_ss0p75v125c
+
+  Point                                                                       Incr       Path
+  ----------------------------------------------------------------------------------------------
+  clock clock (rise edge)                                                     0.00       0.00
+  clock network delay (ideal)                                                 0.00       0.00
+  u_soc/u_axi_tap/read_port_q_reg[2]/CLK (SDFFX1_RVT)                         0.00 #     0.00 r
+  u_soc/u_axi_tap/read_port_q_reg[2]/QN (SDFFX1_RVT)                          0.26       0.26 r
+  ...
+  u_core/u_core/u_muldiv/mult_result_q_reg[22]/D (SDFFARX1_RVT)              21.97      22.22 f
+  data arrival time                                                                     22.22
+
+  clock clock (rise edge)                                                    50.00      50.00
+  clock network delay (ideal)                                                 0.00      50.00
+  u_core/u_core/u_muldiv/mult_result_q_reg[22]/CLK (SDFFARX1_RVT)             0.00      50.00 r
+  library setup time                                                         -0.30      49.70
+  data required time                                                                    49.70
+  ----------------------------------------------------------------------------------------------
+  data required time                                                                    49.70
+  data arrival time                                                                    -22.22
+  ----------------------------------------------------------------------------------------------
+  slack (MET)                                                                           27.48
+
+
+1

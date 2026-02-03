@@ -1,0 +1,2 @@
+Command Line: /home/net/synopsys/installs/verdi/V-2023.12-SP2-1/platform/LINUXAMD64/bin/Novas -ssf fib_tb.vcd
+uname(Linux net1580 4.18.0-553.56.1.el8_10.x86_64 #1 SMP Tue Jun 10 17:00:45 UTC 2025 x86_64)

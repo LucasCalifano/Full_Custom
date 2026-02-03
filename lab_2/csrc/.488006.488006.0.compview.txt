@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1770087306.829761321, "rt":0.37, "ut":0.15, "st":0.12}}
+{"vcselab":{"timestamp_begin":1770087307.270636044, "rt":0.30, "ut":0.20, "st":0.07}}
+{"link":{"timestamp_begin":1770087307.620828421, "rt":0.15, "ut":0.08, "st":0.05}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1770087306.478669368}
+{"VCS_COMP_START_TIME": 1770087306.478669368}
+{"VCS_COMP_END_TIME": 1770087307.854389514}
+{"VCS_USER_OPTIONS": "-v datapath.v controller.v fib_tb.v fib.v -full64 -kdb"}
+{"vcs1": {"peak_mem": 556868}}
+{"vcselab": {"peak_mem": 249220}}
