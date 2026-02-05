@@ -1,0 +1,1 @@
+("NAND_Gate:/\tNAND_Gate Lab3 schematic" (("open" (nil hierarchy "/{Lab3 NAND_Gate schematic }:a"))) nil)("INVX1:/\tINVX1 Lab3 schematic" (("open" (nil hierarchy "/{Lab3 INVX1 schematic }:a"))) nil)("INVXI:/\tINVXI Lab3 schematic" (("open" (nil hierarchy "/{Lab3 INVXI schematic }:a"))) (((-1.95 -2.6125) (0.9375 -0.36875)) "a" "Schematics" 17))
