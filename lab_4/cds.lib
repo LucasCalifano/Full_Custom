@@ -1,0 +1,13 @@
+# File Created by mo412323 at Sun Feb  2 02:32:48 2025
+# assisted by CdsLibEditor
+INCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+DEFINE analogLib /home/net/cadence/installs/IC618/tools/dfII/etc/cdslib/artist/analogLib 
+DEFINE US_8ths   /home/net/cadence/installs/IC618/tools/dfII/etc/cdslib/sheets/US_8ths 
+DEFINE basic     /home/net/cadence/installs/IC618/tools/dfII/etc/cdslib/basic 
+DEFINE cdsDefTechLib /home/net/cadence/installs/IC618/tools/dfII/etc/cdsDefTechLib 
+DEFINE gpdk180 /home/net/local/gpdk180_v3.3/libs.oa22/gpdk180
+DEFINE substrateLib /home/net/local/gpdk180_v3.3/libs.oa22/gpdk180/libs.oa22/substrateLib
+DEFINE Lab3 /home/net/lu282362/full_custom/lab_3/Lab3
+DEFINE lab_3 /home/net/lu282362/full_custom/lab_3/lab_3
+DEFINE lab_three /home/net/lu282362/full_custom/lab_3/lab_three
+DEFINE Lab4 /home/net/lu282362/full_custom/lab_4/Lab4
