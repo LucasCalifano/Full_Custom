@@ -1,0 +1,1715 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'riscv_core' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full_clock_expanded
+        -delay max
+        -group reg2reg
+        -slack_lesser_than 0.00
+        -max_paths 1000
+Design : riscv_core
+Version: X-2025.06-SP4
+Date   : Sun Feb 22 16:29:23 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p72v125c   Library: saed14rvt_base_ss0p72v125c
+Wire Load Model Mode: top
+
+  Startpoint: u_decode_inst_q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_mult_result_q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_17_/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00 #     0.00 r
+  u_decode_inst_q_reg_17_/Q (SAEDRVT14_FDPRBQ_V2_1)       0.08       0.08 r
+  U29225/X (SAEDRVT14_INV_4)                              0.03       0.11 f
+  U25890/X (SAEDRVT14_INV_S_5)                            0.11       0.23 r
+  U30816/X (SAEDRVT14_INV_20)                             0.07       0.29 f
+  U29499/X (SAEDRVT14_BUF_S_1)                            0.16       0.46 f
+  U28973/X (SAEDRVT14_AN3_1)                              0.25       0.70 f
+  U31213/X (SAEDRVT14_ND2_CDC_0P5)                        0.39       1.09 r
+  U29032/X (SAEDRVT14_BUF_S_1)                            0.41       1.50 r
+  U28483/X (SAEDRVT14_OAI22_3)                            0.15       1.65 f
+  U28930/X (SAEDRVT14_NR4_0P75)                           0.10       1.75 r
+  U30826/X (SAEDRVT14_AO31_4)                             0.04       1.79 r
+  U27147/X (SAEDRVT14_OA221_4)                            0.07       1.86 r
+  U28067/CKOUTB (SAEDRVT14_CLKSPLT_8)                     0.07       1.93 f
+  U25851/X (SAEDRVT14_ND2_MM_16)                          0.02       1.95 r
+  U32350/X (SAEDRVT14_NR2_MM_16)                          0.02       1.96 f
+  U25347/X (SAEDRVT14_ND2_16)                             0.01       1.98 r
+  U33168/X (SAEDRVT14_EN3_3)                              0.08       2.05 r
+  U33345/X (SAEDRVT14_INV_S_20)                           0.02       2.08 f
+  U31984/X (SAEDRVT14_EN3_3)                              0.09       2.16 r
+  U33171/X (SAEDRVT14_EN3_3)                              0.07       2.23 f
+  U33208/X (SAEDRVT14_EN2_4)                              0.05       2.28 r
+  U32132/X (SAEDRVT14_EN2_4)                              0.05       2.33 f
+  U32133/X (SAEDRVT14_INV_S_20)                           0.02       2.35 r
+  U27444/X (SAEDRVT14_ND2_MM_10)                          0.02       2.36 f
+  U31755/X (SAEDRVT14_OAI21_V1_8)                         0.02       2.39 r
+  U27698/X (SAEDRVT14_INV_S_16)                           0.02       2.40 f
+  U32761/X (SAEDRVT14_EN3_3)                              0.08       2.48 r
+  U27648/X (SAEDRVT14_INV_S_20)                           0.02       2.50 f
+  U32854/X (SAEDRVT14_EN2_4)                              0.04       2.54 f
+  U32850/X (SAEDRVT14_EN2_4)                              0.05       2.59 r
+  U32767/X (SAEDRVT14_INV_S_20)                           0.02       2.61 f
+  U27459/X (SAEDRVT14_ND2_MM_10)                          0.01       2.63 r
+  U32849/X (SAEDRVT14_OAI21_V1_8)                         0.04       2.66 f
+  U25595/X (SAEDRVT14_INV_S_20)                           0.02       2.68 r
+  U33178/X (SAEDRVT14_EN3_3)                              0.06       2.74 f
+  U32760/X (SAEDRVT14_EN2_4)                              0.06       2.81 r
+  U31955/X (SAEDRVT14_EN2_4)                              0.05       2.85 f
+  U27170/X (SAEDRVT14_EN2_4)                              0.06       2.91 r
+  U27169/X (SAEDRVT14_EN2_4)                              0.05       2.96 f
+  U27168/X (SAEDRVT14_EN2_4)                              0.04       3.00 f
+  U27167/X (SAEDRVT14_EN2_4)                              0.05       3.05 r
+  U27160/X (SAEDRVT14_BUF_20)                             0.03       3.08 r
+  U27159/X (SAEDRVT14_INV_S_20)                           0.01       3.09 f
+  U27158/X (SAEDRVT14_ND2_MM_16)                          0.01       3.11 r
+  U27157/X (SAEDRVT14_ND2_MM_16)                          0.01       3.12 f
+  U27156/X (SAEDRVT14_EN2_4)                              0.05       3.17 r
+  U27153/X (SAEDRVT14_INV_S_20)                           0.02       3.19 f
+  U27152/X (SAEDRVT14_EN2_4)                              0.04       3.23 r
+  U27151/X (SAEDRVT14_EN2_4)                              0.04       3.28 f
+  U27149/X (SAEDRVT14_BUF_20)                             0.03       3.31 f
+  U25518/X (SAEDRVT14_EN3_3)                              0.08       3.39 r
+  U25720/X (SAEDRVT14_AN2B_MM_20)                         0.03       3.42 r
+  U25721/X (SAEDRVT14_INV_S_20)                           0.01       3.43 f
+  U25495/X (SAEDRVT14_ND2_MM_12)                          0.01       3.44 r
+  U25804/X (SAEDRVT14_EN2_4)                              0.04       3.49 f
+  U25811/X (SAEDRVT14_NR2_MM_16)                          0.02       3.50 r
+  U25810/X (SAEDRVT14_OR2_MM_20)                          0.03       3.53 r
+  U25802/X (SAEDRVT14_AN2_MM_12)                          0.02       3.56 r
+  U27186/X (SAEDRVT14_AOI21_8)                            0.02       3.58 f
+  U27184/X (SAEDRVT14_OR2_MM_20)                          0.04       3.62 f
+  U27068/X (SAEDRVT14_EN2_4)                              0.04       3.66 r
+  U27040/X (SAEDRVT14_EN2_4)                              0.04       3.71 f
+  u_muldiv_mult_125_S2_21_9/S (SAEDRVT14_ADDF_V1_2)       0.09       3.80 r
+  u_muldiv_mult_125_S2_22_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.87 r
+  u_muldiv_mult_125_S2_23_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.93 r
+  u_muldiv_mult_125_S2_24_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.02 r
+  u_muldiv_mult_125_S2_25_8/S (SAEDRVT14_ADDF_V2_2)       0.10       4.12 f
+  u_muldiv_mult_125_S2_26_7/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.20 f
+  u_muldiv_mult_125_S2_27_7/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.27 f
+  u_muldiv_mult_125_S2_28_7/S (SAEDRVT14_ADDF_V1_2)       0.10       4.37 r
+  u_muldiv_mult_125_S2_29_6/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.43 r
+  u_muldiv_mult_125_S2_30_6/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.52 r
+  u_muldiv_mult_125_S2_31_6/S (SAEDRVT14_ADDF_V1_2)       0.09       4.61 f
+  u_muldiv_mult_125_S2_32_5/S (SAEDRVT14_ADDF_V1_2)       0.10       4.71 r
+  u_muldiv_mult_125_S2_33_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.78 r
+  u_muldiv_mult_125_S2_34_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.85 r
+  u_muldiv_mult_125_S2_35_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.92 r
+  u_muldiv_mult_125_S2_36_4/CO (SAEDRVT14_ADDF_V2_2)      0.08       5.01 r
+  u_muldiv_mult_125_S2_37_4/S (SAEDRVT14_ADDF_V2_2)       0.10       5.11 f
+  u_muldiv_mult_125_S2_38_3/S (SAEDRVT14_ADDF_V2_2)       0.09       5.19 r
+  u_muldiv_mult_125_S2_39_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.26 r
+  u_muldiv_mult_125_S2_40_2/CO (SAEDRVT14_ADDF_V2_2)      0.09       5.35 r
+  u_muldiv_mult_125_S2_41_2/CO (SAEDRVT14_ADDF_V1_2)      0.06       5.41 r
+  u_muldiv_mult_125_S2_42_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.49 r
+  u_muldiv_mult_125_S2_43_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.56 r
+  u_muldiv_mult_125_S2_44_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.63 r
+  u_muldiv_mult_125_S2_45_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.70 r
+  u_muldiv_mult_125_S2_46_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.77 r
+  u_muldiv_mult_125_S2_47_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.84 r
+  u_muldiv_mult_125_S2_48_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.92 r
+  u_muldiv_mult_125_S2_49_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.99 r
+  u_muldiv_mult_125_S2_50_2/CO (SAEDRVT14_ADDF_V2_2)      0.09       6.08 r
+  u_muldiv_mult_125_S2_51_2/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.14 r
+  u_muldiv_mult_125_S2_52_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.21 r
+  u_muldiv_mult_125_S2_53_2/CO (SAEDRVT14_ADDF_V2_2)      0.06       6.27 r
+  u_muldiv_mult_125_S2_54_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.34 r
+  u_muldiv_mult_125_S2_55_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.41 r
+  u_muldiv_mult_125_S2_56_2/CO (SAEDRVT14_ADDF_V2_2)      0.06       6.47 r
+  u_muldiv_mult_125_S2_57_2/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.53 r
+  u_muldiv_mult_125_S2_58_2/CO (SAEDRVT14_ADDF_V2_2)      0.08       6.62 r
+  u_muldiv_mult_125_S2_59_2/S (SAEDRVT14_ADDF_V2_2)       0.10       6.72 f
+  u_muldiv_mult_125_S2_60_1/S (SAEDRVT14_ADDF_V1_2)       0.10       6.81 r
+  u_muldiv_mult_125_S1_61_0/CO (SAEDRVT14_ADDF_V2_2)      0.08       6.90 r
+  u_muldiv_mult_125_S1_62_0/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.96 r
+  U27395/X (SAEDRVT14_EN2_4)                              0.06       7.02 r
+  U27205/X (SAEDRVT14_INV_S_20)                           0.02       7.04 f
+  U27202/X (SAEDRVT14_INV_S_20)                           0.01       7.05 r
+  U27199/X (SAEDRVT14_ND2_MM_16)                          0.01       7.06 f
+  U27196/X (SAEDRVT14_ND2_MM_16)                          0.01       7.07 r
+  U27194/X (SAEDRVT14_ND2_MM_16)                          0.01       7.08 f
+  U27193/X (SAEDRVT14_ND2_MM_16)                          0.01       7.10 r
+  u_muldiv_mult_result_q_reg_31_/D (SAEDRVT14_FDPRB_V3_2)
+                                                          0.00       7.10 r
+  data arrival time                                                  7.10
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_mult_result_q_reg_31_/CK (SAEDRVT14_FDPRB_V3_2)
+                                                          0.00       6.65 r
+  library setup time                                     -0.02       6.63
+  data required time                                                 6.63
+  --------------------------------------------------------------------------
+  data required time                                                 6.63
+  data arrival time                                                 -7.10
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.46
+
+
+  Startpoint: u_decode_inst_q_reg_16_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_mult_result_q_reg_30_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_16_/CK (SAEDRVT14_FDPRBQ_V2_4)      0.00 #     0.00 r
+  u_decode_inst_q_reg_16_/Q (SAEDRVT14_FDPRBQ_V2_4)       0.16       0.16 r
+  U30942/X (SAEDRVT14_INV_S_20)                           0.02       0.18 f
+  U39463/X (SAEDRVT14_INV_1)                              0.06       0.24 r
+  U34059/X (SAEDRVT14_INV_12)                             0.07       0.32 f
+  U28883/X (SAEDRVT14_NR2_MM_1)                           0.16       0.48 r
+  U28898/X (SAEDRVT14_AN2_MM_4)                           0.11       0.59 r
+  U28988/X (SAEDRVT14_ND2_CDC_1)                          0.30       0.89 f
+  U29109/X (SAEDRVT14_BUF_S_1)                            0.49       1.38 f
+  U39458/X (SAEDRVT14_OAI22_1)                            0.27       1.65 r
+  U29257/X (SAEDRVT14_OR4_1)                              0.11       1.76 r
+  U25924/X (SAEDRVT14_OA31_4)                             0.07       1.83 r
+  U32093/X (SAEDRVT14_AO221_4)                            0.06       1.89 r
+  U26706/CKOUT (SAEDRVT14_CLKSPLT_8)                      0.06       1.96 r
+  U27440/X (SAEDRVT14_BUF_16)                             0.04       1.99 r
+  U30773/X (SAEDRVT14_AN2B_MM_12)                         0.03       2.03 r
+  U33878/X (SAEDRVT14_BUF_20)                             0.03       2.05 r
+  U31629/X (SAEDRVT14_BUF_20)                             0.04       2.09 r
+  U31627/X (SAEDRVT14_INV_S_20)                           0.01       2.11 f
+  U25949/X (SAEDRVT14_ND2_4)                              0.02       2.13 r
+  U31628/X (SAEDRVT14_ND2_MM_16)                          0.03       2.16 f
+  U25999/X (SAEDRVT14_ND2_MM_16)                          0.02       2.18 r
+  U31826/X (SAEDRVT14_EN3_3)                              0.07       2.25 r
+  U31827/X (SAEDRVT14_INV_S_20)                           0.02       2.28 f
+  U33649/X (SAEDRVT14_EN2_4)                              0.06       2.33 r
+  U25626/X (SAEDRVT14_INV_S_20)                           0.02       2.35 f
+  U31705/X (SAEDRVT14_ND2_MM_16)                          0.02       2.37 r
+  U31956/X (SAEDRVT14_ND2_MM_16)                          0.02       2.39 f
+  U32586/X (SAEDRVT14_ND2_MM_16)                          0.02       2.41 r
+  U33742/X (SAEDRVT14_INV_S_20)                           0.02       2.42 f
+  U33644/X (SAEDRVT14_OAI21_V1_8)                         0.03       2.45 r
+  U33730/X (SAEDRVT14_INV_S_16)                           0.02       2.46 f
+  U33722/X (SAEDRVT14_OR2_MM_20)                          0.03       2.50 f
+  U33715/X (SAEDRVT14_INV_S_20)                           0.01       2.51 r
+  U32594/X (SAEDRVT14_OR2_MM_20)                          0.03       2.54 r
+  U26438/X (SAEDRVT14_INV_S_20)                           0.01       2.55 f
+  U25458/X (SAEDRVT14_ND2_MM_16)                          0.01       2.56 r
+  U28440/X (SAEDRVT14_ND2_16)                             0.01       2.58 f
+  U32595/X (SAEDRVT14_INV_S_20)                           0.02       2.60 r
+  U25716/X (SAEDRVT14_INV_S_20)                           0.02       2.61 f
+  U33735/X (SAEDRVT14_ND2_MM_16)                          0.02       2.63 r
+  U33645/X (SAEDRVT14_OAI21_V1_8)                         0.03       2.66 f
+  U25585/X (SAEDRVT14_INV_S_20)                           0.02       2.68 r
+  U25741/X (SAEDRVT14_ND2_16)                             0.02       2.70 f
+  U32208/X (SAEDRVT14_ND2_MM_16)                          0.02       2.72 r
+  U25583/X (SAEDRVT14_INV_S_20)                           0.01       2.74 f
+  U33651/X (SAEDRVT14_EN2_4)                              0.04       2.78 r
+  U26055/X (SAEDRVT14_BUF_20)                             0.03       2.81 r
+  U25950/X (SAEDRVT14_AOI21_8)                            0.03       2.84 f
+  U26057/X (SAEDRVT14_NR2_MM_16)                          0.02       2.86 r
+  u_muldiv_mult_125_S2_10_40/S (SAEDRVT14_ADDF_V2_2)      0.10       2.95 f
+  U25586/X (SAEDRVT14_BUF_16)                             0.03       2.99 f
+  U32462/X (SAEDRVT14_NR2_5)                              0.05       3.03 r
+  U25584/X (SAEDRVT14_NR2_MM_10)                          0.01       3.05 f
+  u_muldiv_mult_125_S2_12_39/S (SAEDRVT14_ADDF_V2_2)      0.08       3.13 r
+  U32625/X (SAEDRVT14_BUF_16)                             0.04       3.17 r
+  U32452/X (SAEDRVT14_ND2_CDC_4)                          0.03       3.20 f
+  U32731/X (SAEDRVT14_ND3_8)                              0.03       3.23 r
+  u_muldiv_mult_125_S2_14_38/S (SAEDRVT14_ADDF_V2_2)      0.09       3.32 f
+  U25757/X (SAEDRVT14_BUF_20)                             0.03       3.35 f
+  U28451/X (SAEDRVT14_INV_6)                              0.01       3.37 r
+  U32627/X (SAEDRVT14_EN2_4)                              0.06       3.42 f
+  U32604/X (SAEDRVT14_INV_S_20)                           0.02       3.44 r
+  U30854/X (SAEDRVT14_ND2_16)                             0.01       3.46 f
+  U33875/X (SAEDRVT14_ND3_8)                              0.05       3.51 r
+  u_muldiv_mult_125_S2_17_36/CO (SAEDRVT14_ADDF_V2_2)     0.07       3.58 r
+  U32446/X (SAEDRVT14_EN2_4)                              0.05       3.64 f
+  U31928/X (SAEDRVT14_EN2_4)                              0.05       3.68 f
+  U30835/X (SAEDRVT14_INV_S_16)                           0.02       3.70 r
+  U25349/X (SAEDRVT14_ND2_MM_3)                           0.03       3.73 f
+  U32259/X (SAEDRVT14_ND3_8)                              0.04       3.77 r
+  u_muldiv_mult_125_S2_20_35/S (SAEDRVT14_ADDF_V2_2)      0.09       3.86 f
+  u_muldiv_mult_125_S2_21_34/CO (SAEDRVT14_ADDF_V1_2)     0.07       3.92 f
+  u_muldiv_mult_125_S2_22_34/CO (SAEDRVT14_ADDF_V2_2)     0.08       4.01 f
+  u_muldiv_mult_125_S2_23_34/S (SAEDRVT14_ADDF_V2_2)      0.09       4.10 r
+  U25394/X (SAEDRVT14_BUF_16)                             0.03       4.13 r
+  U25552/X (SAEDRVT14_AN2_MM_8)                           0.03       4.16 r
+  U25758/X (SAEDRVT14_INV_S_16)                           0.01       4.17 f
+  U32613/X (SAEDRVT14_ND3_8)                              0.03       4.20 r
+  u_muldiv_mult_125_S2_25_33/S (SAEDRVT14_ADDF_V2_2)      0.09       4.29 f
+  u_muldiv_mult_125_S2_26_32/S (SAEDRVT14_ADDF_V1_2)      0.10       4.39 r
+  u_muldiv_mult_125_S2_27_31/CO (SAEDRVT14_ADDF_V2_2)     0.06       4.45 r
+  u_muldiv_mult_125_S2_28_31/S (SAEDRVT14_ADDF_V2_2)      0.10       4.54 f
+  u_muldiv_mult_125_S2_29_30/S (SAEDRVT14_ADDF_V2_2)      0.09       4.63 r
+  u_muldiv_mult_125_S2_30_29/CO (SAEDRVT14_ADDF_V2_2)     0.05       4.69 r
+  u_muldiv_mult_125_S2_31_29/S (SAEDRVT14_ADDF_V2_2)      0.10       4.78 f
+  u_muldiv_mult_125_S2_32_28/S (SAEDRVT14_ADDF_V2_2)      0.06       4.85 r
+  u_muldiv_mult_125_S2_33_27/S (SAEDRVT14_ADDF_V2_2)      0.07       4.91 f
+  u_muldiv_mult_125_S2_34_26/S (SAEDRVT14_ADDF_V2_2)      0.06       4.98 r
+  u_muldiv_mult_125_S2_35_25/CO (SAEDRVT14_ADDF_V2_2)     0.05       5.03 r
+  u_muldiv_mult_125_S2_36_25/S (SAEDRVT14_ADDF_V2_2)      0.10       5.13 f
+  u_muldiv_mult_125_S2_37_24/S (SAEDRVT14_ADDF_V2_2)      0.06       5.19 r
+  u_muldiv_mult_125_S2_38_23/S (SAEDRVT14_ADDF_V2_2)      0.07       5.26 f
+  u_muldiv_mult_125_S2_39_22/S (SAEDRVT14_ADDF_V2_2)      0.06       5.32 r
+  u_muldiv_mult_125_S2_40_21/S (SAEDRVT14_ADDF_V2_2)      0.07       5.39 f
+  u_muldiv_mult_125_S2_41_20/S (SAEDRVT14_ADDF_V2_2)      0.06       5.45 r
+  u_muldiv_mult_125_S2_42_19/S (SAEDRVT14_ADDF_V2_2)      0.07       5.52 f
+  u_muldiv_mult_125_S2_43_18/S (SAEDRVT14_ADDF_V2_2)      0.06       5.58 r
+  u_muldiv_mult_125_S2_44_17/S (SAEDRVT14_ADDF_V2_2)      0.07       5.65 f
+  u_muldiv_mult_125_S2_45_16/S (SAEDRVT14_ADDF_V2_2)      0.06       5.71 r
+  u_muldiv_mult_125_S2_46_15/S (SAEDRVT14_ADDF_V2_2)      0.07       5.78 f
+  u_muldiv_mult_125_S2_47_14/S (SAEDRVT14_ADDF_V2_2)      0.07       5.84 r
+  U28497/X (SAEDRVT14_BUF_16)                             0.03       5.88 r
+  U32643/X (SAEDRVT14_EN2_4)                              0.05       5.93 f
+  U32642/X (SAEDRVT14_EN2_4)                              0.05       5.97 r
+  u_muldiv_mult_125_S2_49_12/S (SAEDRVT14_ADDF_V2_2)      0.06       6.03 f
+  u_muldiv_mult_125_S2_50_11/S (SAEDRVT14_ADDF_V2_2)      0.06       6.10 r
+  u_muldiv_mult_125_S2_51_10/S (SAEDRVT14_ADDF_V2_2)      0.07       6.16 f
+  u_muldiv_mult_125_S2_52_9/CO (SAEDRVT14_ADDF_V2_2)      0.05       6.22 f
+  U32830/X (SAEDRVT14_BUF_16)                             0.03       6.25 f
+  U32636/X (SAEDRVT14_EN2_4)                              0.05       6.30 r
+  U32635/X (SAEDRVT14_EN2_4)                              0.05       6.34 f
+  u_muldiv_mult_125_S2_54_8/S (SAEDRVT14_ADDF_V2_2)       0.06       6.40 r
+  u_muldiv_mult_125_S2_55_7/S (SAEDRVT14_ADDF_V2_2)       0.07       6.47 f
+  u_muldiv_mult_125_S2_56_6/S (SAEDRVT14_ADDF_V2_2)       0.06       6.53 r
+  u_muldiv_mult_125_S2_57_5/S (SAEDRVT14_ADDF_V2_2)       0.07       6.60 f
+  u_muldiv_mult_125_S2_58_4/S (SAEDRVT14_ADDF_V2_2)       0.06       6.66 r
+  u_muldiv_mult_125_S2_59_3/S (SAEDRVT14_ADDF_V2_2)       0.07       6.73 f
+  u_muldiv_mult_125_S2_60_2/S (SAEDRVT14_ADDF_V2_2)       0.07       6.79 r
+  u_muldiv_mult_125_S2_61_1/S (SAEDRVT14_ADDF_V1_2)       0.09       6.89 f
+  u_muldiv_mult_125_S1_62_0/S (SAEDRVT14_ADDF_V1_2)       0.11       6.99 r
+  U27397/X (SAEDRVT14_AO22_4)                             0.05       7.04 r
+  u_muldiv_mult_result_q_reg_30_/D (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       7.04 r
+  data arrival time                                                  7.04
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_mult_result_q_reg_30_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.03       6.62
+  data required time                                                 6.62
+  --------------------------------------------------------------------------
+  data required time                                                 6.62
+  data arrival time                                                 -7.04
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.42
+
+
+  Startpoint: u_decode_inst_q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_mult_result_q_reg_29_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_17_/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00 #     0.00 r
+  u_decode_inst_q_reg_17_/Q (SAEDRVT14_FDPRBQ_V2_1)       0.08       0.08 r
+  U29225/X (SAEDRVT14_INV_4)                              0.03       0.11 f
+  U25890/X (SAEDRVT14_INV_S_5)                            0.11       0.23 r
+  U30816/X (SAEDRVT14_INV_20)                             0.07       0.29 f
+  U29499/X (SAEDRVT14_BUF_S_1)                            0.16       0.46 f
+  U28973/X (SAEDRVT14_AN3_1)                              0.25       0.70 f
+  U31213/X (SAEDRVT14_ND2_CDC_0P5)                        0.39       1.09 r
+  U29032/X (SAEDRVT14_BUF_S_1)                            0.41       1.50 r
+  U28483/X (SAEDRVT14_OAI22_3)                            0.15       1.65 f
+  U28930/X (SAEDRVT14_NR4_0P75)                           0.10       1.75 r
+  U30826/X (SAEDRVT14_AO31_4)                             0.04       1.79 r
+  U27147/X (SAEDRVT14_OA221_4)                            0.07       1.86 r
+  U28067/CKOUTB (SAEDRVT14_CLKSPLT_8)                     0.07       1.93 f
+  U25851/X (SAEDRVT14_ND2_MM_16)                          0.02       1.95 r
+  U32350/X (SAEDRVT14_NR2_MM_16)                          0.02       1.96 f
+  U25347/X (SAEDRVT14_ND2_16)                             0.01       1.98 r
+  U33168/X (SAEDRVT14_EN3_3)                              0.08       2.05 r
+  U33345/X (SAEDRVT14_INV_S_20)                           0.02       2.08 f
+  U31984/X (SAEDRVT14_EN3_3)                              0.09       2.16 r
+  U33171/X (SAEDRVT14_EN3_3)                              0.07       2.23 f
+  U33208/X (SAEDRVT14_EN2_4)                              0.05       2.28 r
+  U32132/X (SAEDRVT14_EN2_4)                              0.05       2.33 f
+  U32133/X (SAEDRVT14_INV_S_20)                           0.02       2.35 r
+  U27444/X (SAEDRVT14_ND2_MM_10)                          0.02       2.36 f
+  U31755/X (SAEDRVT14_OAI21_V1_8)                         0.02       2.39 r
+  U27698/X (SAEDRVT14_INV_S_16)                           0.02       2.40 f
+  U32761/X (SAEDRVT14_EN3_3)                              0.08       2.48 r
+  U27648/X (SAEDRVT14_INV_S_20)                           0.02       2.50 f
+  U32854/X (SAEDRVT14_EN2_4)                              0.04       2.54 f
+  U32850/X (SAEDRVT14_EN2_4)                              0.05       2.59 r
+  U32767/X (SAEDRVT14_INV_S_20)                           0.02       2.61 f
+  U27459/X (SAEDRVT14_ND2_MM_10)                          0.01       2.63 r
+  U32849/X (SAEDRVT14_OAI21_V1_8)                         0.04       2.66 f
+  U25595/X (SAEDRVT14_INV_S_20)                           0.02       2.68 r
+  U33178/X (SAEDRVT14_EN3_3)                              0.06       2.74 f
+  U32760/X (SAEDRVT14_EN2_4)                              0.06       2.81 r
+  U31955/X (SAEDRVT14_EN2_4)                              0.05       2.85 f
+  U27170/X (SAEDRVT14_EN2_4)                              0.06       2.91 r
+  U27169/X (SAEDRVT14_EN2_4)                              0.05       2.96 f
+  U27168/X (SAEDRVT14_EN2_4)                              0.04       3.00 f
+  U27167/X (SAEDRVT14_EN2_4)                              0.05       3.05 r
+  U27160/X (SAEDRVT14_BUF_20)                             0.03       3.08 r
+  U27159/X (SAEDRVT14_INV_S_20)                           0.01       3.09 f
+  U27158/X (SAEDRVT14_ND2_MM_16)                          0.01       3.11 r
+  U27157/X (SAEDRVT14_ND2_MM_16)                          0.01       3.12 f
+  U27156/X (SAEDRVT14_EN2_4)                              0.05       3.17 r
+  U27153/X (SAEDRVT14_INV_S_20)                           0.02       3.19 f
+  U27152/X (SAEDRVT14_EN2_4)                              0.04       3.23 r
+  U27151/X (SAEDRVT14_EN2_4)                              0.04       3.28 f
+  U27149/X (SAEDRVT14_BUF_20)                             0.03       3.31 f
+  U25518/X (SAEDRVT14_EN3_3)                              0.08       3.39 r
+  U25720/X (SAEDRVT14_AN2B_MM_20)                         0.03       3.42 r
+  U25721/X (SAEDRVT14_INV_S_20)                           0.01       3.43 f
+  U25495/X (SAEDRVT14_ND2_MM_12)                          0.01       3.44 r
+  U25804/X (SAEDRVT14_EN2_4)                              0.04       3.49 f
+  U25811/X (SAEDRVT14_NR2_MM_16)                          0.02       3.50 r
+  U25810/X (SAEDRVT14_OR2_MM_20)                          0.03       3.53 r
+  U25802/X (SAEDRVT14_AN2_MM_12)                          0.02       3.56 r
+  U27186/X (SAEDRVT14_AOI21_8)                            0.02       3.58 f
+  U27184/X (SAEDRVT14_OR2_MM_20)                          0.04       3.62 f
+  U27068/X (SAEDRVT14_EN2_4)                              0.04       3.66 r
+  U27040/X (SAEDRVT14_EN2_4)                              0.04       3.71 f
+  u_muldiv_mult_125_S2_21_9/S (SAEDRVT14_ADDF_V1_2)       0.09       3.80 r
+  u_muldiv_mult_125_S2_22_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.87 r
+  u_muldiv_mult_125_S2_23_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.93 r
+  u_muldiv_mult_125_S2_24_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.02 r
+  u_muldiv_mult_125_S2_25_8/S (SAEDRVT14_ADDF_V2_2)       0.10       4.12 f
+  u_muldiv_mult_125_S2_26_7/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.20 f
+  u_muldiv_mult_125_S2_27_7/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.27 f
+  u_muldiv_mult_125_S2_28_7/S (SAEDRVT14_ADDF_V1_2)       0.10       4.37 r
+  u_muldiv_mult_125_S2_29_6/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.43 r
+  u_muldiv_mult_125_S2_30_6/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.52 r
+  u_muldiv_mult_125_S2_31_6/S (SAEDRVT14_ADDF_V1_2)       0.09       4.61 f
+  u_muldiv_mult_125_S2_32_5/S (SAEDRVT14_ADDF_V1_2)       0.10       4.71 r
+  u_muldiv_mult_125_S2_33_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.78 r
+  u_muldiv_mult_125_S2_34_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.85 r
+  u_muldiv_mult_125_S2_35_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.92 r
+  u_muldiv_mult_125_S2_36_4/CO (SAEDRVT14_ADDF_V2_2)      0.08       5.01 r
+  u_muldiv_mult_125_S2_37_4/S (SAEDRVT14_ADDF_V2_2)       0.10       5.11 f
+  u_muldiv_mult_125_S2_38_3/S (SAEDRVT14_ADDF_V2_2)       0.09       5.19 r
+  u_muldiv_mult_125_S2_39_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.26 r
+  u_muldiv_mult_125_S2_40_2/CO (SAEDRVT14_ADDF_V2_2)      0.09       5.35 r
+  u_muldiv_mult_125_S2_41_2/CO (SAEDRVT14_ADDF_V1_2)      0.06       5.41 r
+  u_muldiv_mult_125_S2_42_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.49 r
+  u_muldiv_mult_125_S2_43_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.56 r
+  u_muldiv_mult_125_S2_44_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.63 r
+  u_muldiv_mult_125_S2_45_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.70 r
+  u_muldiv_mult_125_S2_46_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.77 r
+  u_muldiv_mult_125_S2_47_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.84 r
+  u_muldiv_mult_125_S2_48_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.92 r
+  u_muldiv_mult_125_S2_49_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.99 r
+  u_muldiv_mult_125_S2_50_2/CO (SAEDRVT14_ADDF_V2_2)      0.09       6.08 r
+  u_muldiv_mult_125_S2_51_2/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.14 r
+  u_muldiv_mult_125_S2_52_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.21 r
+  u_muldiv_mult_125_S2_53_2/CO (SAEDRVT14_ADDF_V2_2)      0.06       6.27 r
+  u_muldiv_mult_125_S2_54_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.34 r
+  u_muldiv_mult_125_S2_55_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.41 r
+  u_muldiv_mult_125_S2_56_2/CO (SAEDRVT14_ADDF_V2_2)      0.06       6.47 r
+  u_muldiv_mult_125_S2_57_2/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.53 r
+  u_muldiv_mult_125_S2_58_2/CO (SAEDRVT14_ADDF_V2_2)      0.08       6.62 r
+  u_muldiv_mult_125_S2_59_2/S (SAEDRVT14_ADDF_V2_2)       0.10       6.72 f
+  u_muldiv_mult_125_S2_60_1/S (SAEDRVT14_ADDF_V1_2)       0.10       6.81 r
+  u_muldiv_mult_125_S1_61_0/S (SAEDRVT14_ADDF_V2_2)       0.09       6.91 r
+  U26027/X (SAEDRVT14_AO22_4)                             0.04       6.95 r
+  u_muldiv_mult_result_q_reg_29_/D (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.95 r
+  data arrival time                                                  6.95
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_mult_result_q_reg_29_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.03       6.62
+  data required time                                                 6.62
+  --------------------------------------------------------------------------
+  data required time                                                 6.62
+  data arrival time                                                 -6.95
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.33
+
+
+  Startpoint: u_decode_inst_q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_mult_result_q_reg_27_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_17_/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00 #     0.00 r
+  u_decode_inst_q_reg_17_/Q (SAEDRVT14_FDPRBQ_V2_1)       0.08       0.08 r
+  U29225/X (SAEDRVT14_INV_4)                              0.03       0.11 f
+  U25890/X (SAEDRVT14_INV_S_5)                            0.11       0.23 r
+  U30816/X (SAEDRVT14_INV_20)                             0.07       0.29 f
+  U29499/X (SAEDRVT14_BUF_S_1)                            0.16       0.46 f
+  U28973/X (SAEDRVT14_AN3_1)                              0.25       0.70 f
+  U31213/X (SAEDRVT14_ND2_CDC_0P5)                        0.39       1.09 r
+  U29032/X (SAEDRVT14_BUF_S_1)                            0.41       1.50 r
+  U28483/X (SAEDRVT14_OAI22_3)                            0.15       1.65 f
+  U28930/X (SAEDRVT14_NR4_0P75)                           0.10       1.75 r
+  U30826/X (SAEDRVT14_AO31_4)                             0.04       1.79 r
+  U27147/X (SAEDRVT14_OA221_4)                            0.07       1.86 r
+  U28067/CKOUTB (SAEDRVT14_CLKSPLT_8)                     0.07       1.93 f
+  U25851/X (SAEDRVT14_ND2_MM_16)                          0.02       1.95 r
+  U32350/X (SAEDRVT14_NR2_MM_16)                          0.02       1.96 f
+  U25347/X (SAEDRVT14_ND2_16)                             0.01       1.98 r
+  U33168/X (SAEDRVT14_EN3_3)                              0.08       2.05 r
+  U33345/X (SAEDRVT14_INV_S_20)                           0.02       2.08 f
+  U31984/X (SAEDRVT14_EN3_3)                              0.09       2.16 r
+  U33171/X (SAEDRVT14_EN3_3)                              0.07       2.23 f
+  U33208/X (SAEDRVT14_EN2_4)                              0.05       2.28 r
+  U32132/X (SAEDRVT14_EN2_4)                              0.05       2.33 f
+  U32133/X (SAEDRVT14_INV_S_20)                           0.02       2.35 r
+  U27444/X (SAEDRVT14_ND2_MM_10)                          0.02       2.36 f
+  U31755/X (SAEDRVT14_OAI21_V1_8)                         0.02       2.39 r
+  U27698/X (SAEDRVT14_INV_S_16)                           0.02       2.40 f
+  U32761/X (SAEDRVT14_EN3_3)                              0.08       2.48 r
+  U27648/X (SAEDRVT14_INV_S_20)                           0.02       2.50 f
+  U32854/X (SAEDRVT14_EN2_4)                              0.04       2.54 f
+  U32850/X (SAEDRVT14_EN2_4)                              0.05       2.59 r
+  U32767/X (SAEDRVT14_INV_S_20)                           0.02       2.61 f
+  U27459/X (SAEDRVT14_ND2_MM_10)                          0.01       2.63 r
+  U32849/X (SAEDRVT14_OAI21_V1_8)                         0.04       2.66 f
+  U25595/X (SAEDRVT14_INV_S_20)                           0.02       2.68 r
+  U33178/X (SAEDRVT14_EN3_3)                              0.06       2.74 f
+  U32760/X (SAEDRVT14_EN2_4)                              0.06       2.81 r
+  U31955/X (SAEDRVT14_EN2_4)                              0.05       2.85 f
+  U27170/X (SAEDRVT14_EN2_4)                              0.06       2.91 r
+  U27169/X (SAEDRVT14_EN2_4)                              0.05       2.96 f
+  U27168/X (SAEDRVT14_EN2_4)                              0.04       3.00 f
+  U27167/X (SAEDRVT14_EN2_4)                              0.05       3.05 r
+  U27160/X (SAEDRVT14_BUF_20)                             0.03       3.08 r
+  U27159/X (SAEDRVT14_INV_S_20)                           0.01       3.09 f
+  U27158/X (SAEDRVT14_ND2_MM_16)                          0.01       3.11 r
+  U27157/X (SAEDRVT14_ND2_MM_16)                          0.01       3.12 f
+  U27156/X (SAEDRVT14_EN2_4)                              0.05       3.17 r
+  U27153/X (SAEDRVT14_INV_S_20)                           0.02       3.19 f
+  U27152/X (SAEDRVT14_EN2_4)                              0.04       3.23 r
+  U27151/X (SAEDRVT14_EN2_4)                              0.04       3.28 f
+  U27149/X (SAEDRVT14_BUF_20)                             0.03       3.31 f
+  U25518/X (SAEDRVT14_EN3_3)                              0.07       3.38 f
+  U25720/X (SAEDRVT14_AN2B_MM_20)                         0.03       3.41 f
+  U25721/X (SAEDRVT14_INV_S_20)                           0.01       3.42 r
+  U27190/X (SAEDRVT14_ND2_MM_16)                          0.01       3.43 f
+  U27188/X (SAEDRVT14_EN2_4)                              0.05       3.48 r
+  U25806/X (SAEDRVT14_INV_S_16)                           0.02       3.50 f
+  U27189/X (SAEDRVT14_EN3_3)                              0.07       3.57 r
+  u_muldiv_mult_125_S2_19_9/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.63 r
+  U25362/X (SAEDRVT14_BUF_20)                             0.04       3.67 r
+  U25361/X (SAEDRVT14_AOI21_8)                            0.03       3.70 f
+  U27039/X (SAEDRVT14_NR2_MM_16)                          0.02       3.72 r
+  u_muldiv_mult_125_S2_21_9/S (SAEDRVT14_ADDF_V1_2)       0.09       3.80 f
+  u_muldiv_mult_125_S2_22_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.87 f
+  u_muldiv_mult_125_S2_23_8/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.93 f
+  u_muldiv_mult_125_S2_24_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.02 f
+  u_muldiv_mult_125_S2_25_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.10 f
+  u_muldiv_mult_125_S2_26_8/S (SAEDRVT14_ADDF_V1_2)       0.10       4.20 r
+  u_muldiv_mult_125_S2_27_7/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.26 r
+  u_muldiv_mult_125_S2_28_7/S (SAEDRVT14_ADDF_V1_2)       0.10       4.36 f
+  u_muldiv_mult_125_S2_29_6/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.43 f
+  u_muldiv_mult_125_S2_30_6/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.51 f
+  u_muldiv_mult_125_S2_31_6/S (SAEDRVT14_ADDF_V1_2)       0.10       4.61 r
+  u_muldiv_mult_125_S2_32_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.67 r
+  u_muldiv_mult_125_S2_33_5/CO (SAEDRVT14_ADDF_V2_2)      0.09       4.76 r
+  u_muldiv_mult_125_S2_34_5/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.84 r
+  u_muldiv_mult_125_S2_35_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.91 r
+  u_muldiv_mult_125_S2_36_5/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.98 r
+  u_muldiv_mult_125_S2_37_5/S (SAEDRVT14_ADDF_V1_2)       0.11       5.09 f
+  u_muldiv_mult_125_S2_38_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.16 f
+  u_muldiv_mult_125_S2_39_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.23 f
+  u_muldiv_mult_125_S2_40_4/S (SAEDRVT14_ADDF_V1_2)       0.10       5.33 r
+  u_muldiv_mult_125_S2_41_3/CO (SAEDRVT14_ADDF_V2_2)      0.09       5.41 r
+  u_muldiv_mult_125_S2_42_3/CO (SAEDRVT14_ADDF_V2_2)      0.05       5.47 r
+  u_muldiv_mult_125_S2_43_3/CO (SAEDRVT14_ADDF_V2_2)      0.08       5.55 r
+  u_muldiv_mult_125_S2_44_3/S (SAEDRVT14_ADDF_V2_2)       0.10       5.64 f
+  u_muldiv_mult_125_S2_45_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.71 f
+  u_muldiv_mult_125_S2_46_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.78 f
+  u_muldiv_mult_125_S2_47_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.84 f
+  u_muldiv_mult_125_S2_48_2/S (SAEDRVT14_ADDF_V1_2)       0.10       5.95 r
+  u_muldiv_mult_125_S2_49_1/CO (SAEDRVT14_ADDF_V2_2)      0.09       6.04 r
+  u_muldiv_mult_125_S2_50_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.11 r
+  u_muldiv_mult_125_S2_51_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.17 r
+  u_muldiv_mult_125_S2_52_1/CO (SAEDRVT14_ADDF_V2_2)      0.08       6.26 r
+  u_muldiv_mult_125_S2_53_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.32 r
+  u_muldiv_mult_125_S2_54_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.39 r
+  u_muldiv_mult_125_S2_55_1/CO (SAEDRVT14_ADDF_V2_2)      0.06       6.45 r
+  u_muldiv_mult_125_S2_56_1/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.52 r
+  u_muldiv_mult_125_S2_57_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.59 r
+  u_muldiv_mult_125_S2_58_1/S (SAEDRVT14_ADDF_V1_2)       0.10       6.70 f
+  u_muldiv_mult_125_S1_59_0/S (SAEDRVT14_ADDF_V1_2)       0.10       6.80 r
+  U27398/X (SAEDRVT14_AO22_1)                             0.10       6.90 r
+  u_muldiv_mult_result_q_reg_27_/D (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.90 r
+  data arrival time                                                  6.90
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_mult_result_q_reg_27_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.06       6.59
+  data required time                                                 6.59
+  --------------------------------------------------------------------------
+  data required time                                                 6.59
+  data arrival time                                                 -6.90
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+  Startpoint: u_decode_inst_q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_mult_result_q_reg_28_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_17_/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00 #     0.00 r
+  u_decode_inst_q_reg_17_/Q (SAEDRVT14_FDPRBQ_V2_1)       0.08       0.08 r
+  U29225/X (SAEDRVT14_INV_4)                              0.03       0.11 f
+  U25890/X (SAEDRVT14_INV_S_5)                            0.11       0.23 r
+  U30816/X (SAEDRVT14_INV_20)                             0.07       0.29 f
+  U29499/X (SAEDRVT14_BUF_S_1)                            0.16       0.46 f
+  U28973/X (SAEDRVT14_AN3_1)                              0.25       0.70 f
+  U31213/X (SAEDRVT14_ND2_CDC_0P5)                        0.39       1.09 r
+  U29032/X (SAEDRVT14_BUF_S_1)                            0.41       1.50 r
+  U28483/X (SAEDRVT14_OAI22_3)                            0.15       1.65 f
+  U28930/X (SAEDRVT14_NR4_0P75)                           0.10       1.75 r
+  U30826/X (SAEDRVT14_AO31_4)                             0.04       1.79 r
+  U27147/X (SAEDRVT14_OA221_4)                            0.07       1.86 r
+  U28067/CKOUTB (SAEDRVT14_CLKSPLT_8)                     0.07       1.93 f
+  U25851/X (SAEDRVT14_ND2_MM_16)                          0.02       1.95 r
+  U32350/X (SAEDRVT14_NR2_MM_16)                          0.02       1.96 f
+  U25347/X (SAEDRVT14_ND2_16)                             0.01       1.98 r
+  U33168/X (SAEDRVT14_EN3_3)                              0.08       2.05 r
+  U33345/X (SAEDRVT14_INV_S_20)                           0.02       2.08 f
+  U31984/X (SAEDRVT14_EN3_3)                              0.09       2.16 r
+  U33171/X (SAEDRVT14_EN3_3)                              0.07       2.23 f
+  U33208/X (SAEDRVT14_EN2_4)                              0.05       2.28 r
+  U32132/X (SAEDRVT14_EN2_4)                              0.05       2.33 f
+  U32133/X (SAEDRVT14_INV_S_20)                           0.02       2.35 r
+  U27444/X (SAEDRVT14_ND2_MM_10)                          0.02       2.36 f
+  U31755/X (SAEDRVT14_OAI21_V1_8)                         0.02       2.39 r
+  U27698/X (SAEDRVT14_INV_S_16)                           0.02       2.40 f
+  U32761/X (SAEDRVT14_EN3_3)                              0.08       2.48 r
+  U27648/X (SAEDRVT14_INV_S_20)                           0.02       2.50 f
+  U32854/X (SAEDRVT14_EN2_4)                              0.04       2.54 f
+  U32850/X (SAEDRVT14_EN2_4)                              0.05       2.59 r
+  U32767/X (SAEDRVT14_INV_S_20)                           0.02       2.61 f
+  U27459/X (SAEDRVT14_ND2_MM_10)                          0.01       2.63 r
+  U32849/X (SAEDRVT14_OAI21_V1_8)                         0.04       2.66 f
+  U25595/X (SAEDRVT14_INV_S_20)                           0.02       2.68 r
+  U33178/X (SAEDRVT14_EN3_3)                              0.06       2.74 f
+  U32760/X (SAEDRVT14_EN2_4)                              0.06       2.81 r
+  U31955/X (SAEDRVT14_EN2_4)                              0.05       2.85 f
+  U27170/X (SAEDRVT14_EN2_4)                              0.06       2.91 r
+  U27169/X (SAEDRVT14_EN2_4)                              0.05       2.96 f
+  U27168/X (SAEDRVT14_EN2_4)                              0.04       3.00 f
+  U27167/X (SAEDRVT14_EN2_4)                              0.05       3.05 r
+  U27160/X (SAEDRVT14_BUF_20)                             0.03       3.08 r
+  U27159/X (SAEDRVT14_INV_S_20)                           0.01       3.09 f
+  U27158/X (SAEDRVT14_ND2_MM_16)                          0.01       3.11 r
+  U27157/X (SAEDRVT14_ND2_MM_16)                          0.01       3.12 f
+  U27156/X (SAEDRVT14_EN2_4)                              0.05       3.17 r
+  U27153/X (SAEDRVT14_INV_S_20)                           0.02       3.19 f
+  U27152/X (SAEDRVT14_EN2_4)                              0.04       3.23 r
+  U27151/X (SAEDRVT14_EN2_4)                              0.04       3.28 f
+  U27149/X (SAEDRVT14_BUF_20)                             0.03       3.31 f
+  U25518/X (SAEDRVT14_EN3_3)                              0.07       3.38 f
+  U25720/X (SAEDRVT14_AN2B_MM_20)                         0.03       3.41 f
+  U25721/X (SAEDRVT14_INV_S_20)                           0.01       3.42 r
+  U27190/X (SAEDRVT14_ND2_MM_16)                          0.01       3.43 f
+  U27188/X (SAEDRVT14_EN2_4)                              0.05       3.48 r
+  U25806/X (SAEDRVT14_INV_S_16)                           0.02       3.50 f
+  U27189/X (SAEDRVT14_EN3_3)                              0.07       3.57 r
+  u_muldiv_mult_125_S2_19_9/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.63 r
+  U25362/X (SAEDRVT14_BUF_20)                             0.04       3.67 r
+  U25361/X (SAEDRVT14_AOI21_8)                            0.03       3.70 f
+  U27039/X (SAEDRVT14_NR2_MM_16)                          0.02       3.72 r
+  u_muldiv_mult_125_S2_21_9/S (SAEDRVT14_ADDF_V1_2)       0.09       3.80 f
+  u_muldiv_mult_125_S2_22_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.87 f
+  u_muldiv_mult_125_S2_23_8/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.93 f
+  u_muldiv_mult_125_S2_24_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.02 f
+  u_muldiv_mult_125_S2_25_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.10 f
+  u_muldiv_mult_125_S2_26_8/S (SAEDRVT14_ADDF_V1_2)       0.10       4.20 r
+  u_muldiv_mult_125_S2_27_7/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.26 r
+  u_muldiv_mult_125_S2_28_7/S (SAEDRVT14_ADDF_V1_2)       0.10       4.36 f
+  u_muldiv_mult_125_S2_29_6/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.43 f
+  u_muldiv_mult_125_S2_30_6/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.51 f
+  u_muldiv_mult_125_S2_31_6/S (SAEDRVT14_ADDF_V1_2)       0.10       4.61 r
+  u_muldiv_mult_125_S2_32_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.67 r
+  u_muldiv_mult_125_S2_33_5/CO (SAEDRVT14_ADDF_V2_2)      0.09       4.76 r
+  u_muldiv_mult_125_S2_34_5/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.84 r
+  u_muldiv_mult_125_S2_35_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.91 r
+  u_muldiv_mult_125_S2_36_5/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.98 r
+  u_muldiv_mult_125_S2_37_5/S (SAEDRVT14_ADDF_V1_2)       0.11       5.09 f
+  u_muldiv_mult_125_S2_38_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.16 f
+  u_muldiv_mult_125_S2_39_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.23 f
+  u_muldiv_mult_125_S2_40_4/S (SAEDRVT14_ADDF_V1_2)       0.10       5.33 r
+  u_muldiv_mult_125_S2_41_3/CO (SAEDRVT14_ADDF_V2_2)      0.09       5.41 r
+  u_muldiv_mult_125_S2_42_3/CO (SAEDRVT14_ADDF_V2_2)      0.05       5.47 r
+  u_muldiv_mult_125_S2_43_3/CO (SAEDRVT14_ADDF_V2_2)      0.08       5.55 r
+  u_muldiv_mult_125_S2_44_3/S (SAEDRVT14_ADDF_V2_2)       0.10       5.64 f
+  u_muldiv_mult_125_S2_45_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.71 f
+  u_muldiv_mult_125_S2_46_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.78 f
+  u_muldiv_mult_125_S2_47_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.84 f
+  u_muldiv_mult_125_S2_48_2/S (SAEDRVT14_ADDF_V1_2)       0.10       5.95 r
+  u_muldiv_mult_125_S2_49_1/CO (SAEDRVT14_ADDF_V2_2)      0.09       6.04 r
+  u_muldiv_mult_125_S2_50_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.11 r
+  u_muldiv_mult_125_S2_51_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.17 r
+  u_muldiv_mult_125_S2_52_1/CO (SAEDRVT14_ADDF_V2_2)      0.08       6.26 r
+  u_muldiv_mult_125_S2_53_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.32 r
+  u_muldiv_mult_125_S2_54_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.39 r
+  u_muldiv_mult_125_S2_55_1/CO (SAEDRVT14_ADDF_V2_2)      0.06       6.45 r
+  u_muldiv_mult_125_S2_56_1/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.52 r
+  u_muldiv_mult_125_S2_57_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.59 r
+  u_muldiv_mult_125_S2_58_1/S (SAEDRVT14_ADDF_V1_2)       0.10       6.70 f
+  u_muldiv_mult_125_S1_59_0/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.76 f
+  u_muldiv_mult_125_S1_60_0/S (SAEDRVT14_ADDF_V1_2)       0.10       6.86 r
+  U26025/X (SAEDRVT14_AO22_4)                             0.05       6.91 r
+  u_muldiv_mult_result_q_reg_28_/D (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.91 r
+  data arrival time                                                  6.91
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_mult_result_q_reg_28_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.03       6.62
+  data required time                                                 6.62
+  --------------------------------------------------------------------------
+  data required time                                                 6.62
+  data arrival time                                                 -6.91
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.30
+
+
+  Startpoint: u_decode_inst_q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_mult_result_q_reg_26_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_17_/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00 #     0.00 r
+  u_decode_inst_q_reg_17_/Q (SAEDRVT14_FDPRBQ_V2_1)       0.08       0.08 r
+  U29225/X (SAEDRVT14_INV_4)                              0.03       0.11 f
+  U25890/X (SAEDRVT14_INV_S_5)                            0.11       0.23 r
+  U30816/X (SAEDRVT14_INV_20)                             0.07       0.29 f
+  U29499/X (SAEDRVT14_BUF_S_1)                            0.16       0.46 f
+  U28973/X (SAEDRVT14_AN3_1)                              0.25       0.70 f
+  U31213/X (SAEDRVT14_ND2_CDC_0P5)                        0.39       1.09 r
+  U29032/X (SAEDRVT14_BUF_S_1)                            0.41       1.50 r
+  U28483/X (SAEDRVT14_OAI22_3)                            0.15       1.65 f
+  U28930/X (SAEDRVT14_NR4_0P75)                           0.10       1.75 r
+  U30826/X (SAEDRVT14_AO31_4)                             0.04       1.79 r
+  U27147/X (SAEDRVT14_OA221_4)                            0.07       1.86 r
+  U28067/CKOUTB (SAEDRVT14_CLKSPLT_8)                     0.07       1.93 f
+  U25851/X (SAEDRVT14_ND2_MM_16)                          0.02       1.95 r
+  U32350/X (SAEDRVT14_NR2_MM_16)                          0.02       1.96 f
+  U25347/X (SAEDRVT14_ND2_16)                             0.01       1.98 r
+  U33168/X (SAEDRVT14_EN3_3)                              0.08       2.05 r
+  U33345/X (SAEDRVT14_INV_S_20)                           0.02       2.08 f
+  U31984/X (SAEDRVT14_EN3_3)                              0.09       2.16 r
+  U33171/X (SAEDRVT14_EN3_3)                              0.07       2.23 f
+  U33208/X (SAEDRVT14_EN2_4)                              0.05       2.28 r
+  U32132/X (SAEDRVT14_EN2_4)                              0.05       2.33 f
+  U32133/X (SAEDRVT14_INV_S_20)                           0.02       2.35 r
+  U27444/X (SAEDRVT14_ND2_MM_10)                          0.02       2.36 f
+  U31755/X (SAEDRVT14_OAI21_V1_8)                         0.02       2.39 r
+  U27698/X (SAEDRVT14_INV_S_16)                           0.02       2.40 f
+  U32761/X (SAEDRVT14_EN3_3)                              0.08       2.48 r
+  U27648/X (SAEDRVT14_INV_S_20)                           0.02       2.50 f
+  U32854/X (SAEDRVT14_EN2_4)                              0.04       2.54 f
+  U32850/X (SAEDRVT14_EN2_4)                              0.05       2.59 r
+  U32767/X (SAEDRVT14_INV_S_20)                           0.02       2.61 f
+  U27459/X (SAEDRVT14_ND2_MM_10)                          0.01       2.63 r
+  U32849/X (SAEDRVT14_OAI21_V1_8)                         0.04       2.66 f
+  U25595/X (SAEDRVT14_INV_S_20)                           0.02       2.68 r
+  U33178/X (SAEDRVT14_EN3_3)                              0.06       2.74 f
+  U32760/X (SAEDRVT14_EN2_4)                              0.06       2.81 r
+  U31955/X (SAEDRVT14_EN2_4)                              0.05       2.85 f
+  U27170/X (SAEDRVT14_EN2_4)                              0.06       2.91 r
+  U27169/X (SAEDRVT14_EN2_4)                              0.05       2.96 f
+  U27168/X (SAEDRVT14_EN2_4)                              0.04       3.00 f
+  U27167/X (SAEDRVT14_EN2_4)                              0.05       3.05 r
+  U27160/X (SAEDRVT14_BUF_20)                             0.03       3.08 r
+  U27159/X (SAEDRVT14_INV_S_20)                           0.01       3.09 f
+  U27158/X (SAEDRVT14_ND2_MM_16)                          0.01       3.11 r
+  U27157/X (SAEDRVT14_ND2_MM_16)                          0.01       3.12 f
+  U27156/X (SAEDRVT14_EN2_4)                              0.05       3.17 r
+  U27153/X (SAEDRVT14_INV_S_20)                           0.02       3.19 f
+  U27152/X (SAEDRVT14_EN2_4)                              0.04       3.23 r
+  U27151/X (SAEDRVT14_EN2_4)                              0.04       3.28 f
+  U27149/X (SAEDRVT14_BUF_20)                             0.03       3.31 f
+  U25518/X (SAEDRVT14_EN3_3)                              0.07       3.38 f
+  U25720/X (SAEDRVT14_AN2B_MM_20)                         0.03       3.41 f
+  U25721/X (SAEDRVT14_INV_S_20)                           0.01       3.42 r
+  U27190/X (SAEDRVT14_ND2_MM_16)                          0.01       3.43 f
+  U27188/X (SAEDRVT14_EN2_4)                              0.05       3.48 r
+  U25806/X (SAEDRVT14_INV_S_16)                           0.02       3.50 f
+  U27189/X (SAEDRVT14_EN3_3)                              0.07       3.57 r
+  u_muldiv_mult_125_S2_19_9/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.63 r
+  U25362/X (SAEDRVT14_BUF_20)                             0.04       3.67 r
+  U25361/X (SAEDRVT14_AOI21_8)                            0.03       3.70 f
+  U27039/X (SAEDRVT14_NR2_MM_16)                          0.02       3.72 r
+  u_muldiv_mult_125_S2_21_9/S (SAEDRVT14_ADDF_V1_2)       0.09       3.80 f
+  u_muldiv_mult_125_S2_22_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.87 f
+  u_muldiv_mult_125_S2_23_8/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.93 f
+  u_muldiv_mult_125_S2_24_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.02 f
+  u_muldiv_mult_125_S2_25_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.10 f
+  u_muldiv_mult_125_S2_26_8/S (SAEDRVT14_ADDF_V1_2)       0.10       4.20 r
+  u_muldiv_mult_125_S2_27_7/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.26 r
+  u_muldiv_mult_125_S2_28_7/S (SAEDRVT14_ADDF_V1_2)       0.10       4.36 f
+  u_muldiv_mult_125_S2_29_6/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.43 f
+  u_muldiv_mult_125_S2_30_6/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.51 f
+  u_muldiv_mult_125_S2_31_6/S (SAEDRVT14_ADDF_V1_2)       0.10       4.61 r
+  u_muldiv_mult_125_S2_32_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.67 r
+  u_muldiv_mult_125_S2_33_5/CO (SAEDRVT14_ADDF_V2_2)      0.09       4.76 r
+  u_muldiv_mult_125_S2_34_5/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.84 r
+  u_muldiv_mult_125_S2_35_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.91 r
+  u_muldiv_mult_125_S2_36_5/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.98 r
+  u_muldiv_mult_125_S2_37_5/S (SAEDRVT14_ADDF_V1_2)       0.11       5.09 f
+  u_muldiv_mult_125_S2_38_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.16 f
+  u_muldiv_mult_125_S2_39_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.23 f
+  u_muldiv_mult_125_S2_40_4/S (SAEDRVT14_ADDF_V1_2)       0.10       5.33 r
+  u_muldiv_mult_125_S2_41_3/CO (SAEDRVT14_ADDF_V2_2)      0.09       5.41 r
+  u_muldiv_mult_125_S2_42_3/CO (SAEDRVT14_ADDF_V2_2)      0.05       5.47 r
+  u_muldiv_mult_125_S2_43_3/CO (SAEDRVT14_ADDF_V2_2)      0.08       5.55 r
+  u_muldiv_mult_125_S2_44_3/S (SAEDRVT14_ADDF_V2_2)       0.10       5.64 f
+  u_muldiv_mult_125_S2_45_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.71 f
+  u_muldiv_mult_125_S2_46_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.78 f
+  u_muldiv_mult_125_S2_47_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.84 f
+  u_muldiv_mult_125_S2_48_2/S (SAEDRVT14_ADDF_V1_2)       0.10       5.95 r
+  u_muldiv_mult_125_S2_49_1/CO (SAEDRVT14_ADDF_V2_2)      0.09       6.04 r
+  u_muldiv_mult_125_S2_50_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.11 r
+  u_muldiv_mult_125_S2_51_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.17 r
+  u_muldiv_mult_125_S2_52_1/CO (SAEDRVT14_ADDF_V2_2)      0.08       6.26 r
+  u_muldiv_mult_125_S2_53_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.32 r
+  u_muldiv_mult_125_S2_54_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.39 r
+  u_muldiv_mult_125_S2_55_1/CO (SAEDRVT14_ADDF_V2_2)      0.06       6.45 r
+  u_muldiv_mult_125_S2_56_1/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.52 r
+  u_muldiv_mult_125_S2_57_1/S (SAEDRVT14_ADDF_V1_2)       0.11       6.62 f
+  u_muldiv_mult_125_S1_58_0/S (SAEDRVT14_ADDF_V1_2)       0.11       6.73 r
+  U27399/X (SAEDRVT14_AO22_1)                             0.10       6.83 r
+  u_muldiv_mult_result_q_reg_26_/D (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.83 r
+  data arrival time                                                  6.83
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_mult_result_q_reg_26_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.06       6.59
+  data required time                                                 6.59
+  --------------------------------------------------------------------------
+  data required time                                                 6.59
+  data arrival time                                                 -6.83
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.24
+
+
+  Startpoint: u_decode_inst_q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_mult_result_q_reg_25_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_17_/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00 #     0.00 r
+  u_decode_inst_q_reg_17_/Q (SAEDRVT14_FDPRBQ_V2_1)       0.08       0.08 r
+  U29225/X (SAEDRVT14_INV_4)                              0.03       0.11 f
+  U25890/X (SAEDRVT14_INV_S_5)                            0.11       0.23 r
+  U30816/X (SAEDRVT14_INV_20)                             0.07       0.29 f
+  U29499/X (SAEDRVT14_BUF_S_1)                            0.16       0.46 f
+  U28973/X (SAEDRVT14_AN3_1)                              0.25       0.70 f
+  U31213/X (SAEDRVT14_ND2_CDC_0P5)                        0.39       1.09 r
+  U29032/X (SAEDRVT14_BUF_S_1)                            0.41       1.50 r
+  U28483/X (SAEDRVT14_OAI22_3)                            0.15       1.65 f
+  U28930/X (SAEDRVT14_NR4_0P75)                           0.10       1.75 r
+  U30826/X (SAEDRVT14_AO31_4)                             0.04       1.79 r
+  U27147/X (SAEDRVT14_OA221_4)                            0.07       1.86 r
+  U28067/CKOUTB (SAEDRVT14_CLKSPLT_8)                     0.07       1.93 f
+  U25851/X (SAEDRVT14_ND2_MM_16)                          0.02       1.95 r
+  U32350/X (SAEDRVT14_NR2_MM_16)                          0.02       1.96 f
+  U25347/X (SAEDRVT14_ND2_16)                             0.01       1.98 r
+  U33168/X (SAEDRVT14_EN3_3)                              0.08       2.05 r
+  U33345/X (SAEDRVT14_INV_S_20)                           0.02       2.08 f
+  U31984/X (SAEDRVT14_EN3_3)                              0.09       2.16 r
+  U33171/X (SAEDRVT14_EN3_3)                              0.07       2.23 f
+  U33208/X (SAEDRVT14_EN2_4)                              0.05       2.28 r
+  U32132/X (SAEDRVT14_EN2_4)                              0.05       2.33 f
+  U32133/X (SAEDRVT14_INV_S_20)                           0.02       2.35 r
+  U27444/X (SAEDRVT14_ND2_MM_10)                          0.02       2.36 f
+  U31755/X (SAEDRVT14_OAI21_V1_8)                         0.02       2.39 r
+  U27698/X (SAEDRVT14_INV_S_16)                           0.02       2.40 f
+  U32761/X (SAEDRVT14_EN3_3)                              0.08       2.48 r
+  U27648/X (SAEDRVT14_INV_S_20)                           0.02       2.50 f
+  U32854/X (SAEDRVT14_EN2_4)                              0.04       2.54 f
+  U32850/X (SAEDRVT14_EN2_4)                              0.05       2.59 r
+  U32767/X (SAEDRVT14_INV_S_20)                           0.02       2.61 f
+  U27459/X (SAEDRVT14_ND2_MM_10)                          0.01       2.63 r
+  U32849/X (SAEDRVT14_OAI21_V1_8)                         0.04       2.66 f
+  U25595/X (SAEDRVT14_INV_S_20)                           0.02       2.68 r
+  U33178/X (SAEDRVT14_EN3_3)                              0.06       2.74 f
+  U32760/X (SAEDRVT14_EN2_4)                              0.06       2.81 r
+  U31955/X (SAEDRVT14_EN2_4)                              0.05       2.85 f
+  U27170/X (SAEDRVT14_EN2_4)                              0.06       2.91 r
+  U27169/X (SAEDRVT14_EN2_4)                              0.05       2.96 f
+  U27168/X (SAEDRVT14_EN2_4)                              0.04       3.00 f
+  U27167/X (SAEDRVT14_EN2_4)                              0.05       3.05 r
+  U27160/X (SAEDRVT14_BUF_20)                             0.03       3.08 r
+  U27159/X (SAEDRVT14_INV_S_20)                           0.01       3.09 f
+  U27158/X (SAEDRVT14_ND2_MM_16)                          0.01       3.11 r
+  U27157/X (SAEDRVT14_ND2_MM_16)                          0.01       3.12 f
+  U27156/X (SAEDRVT14_EN2_4)                              0.05       3.17 r
+  U27153/X (SAEDRVT14_INV_S_20)                           0.02       3.19 f
+  U27152/X (SAEDRVT14_EN2_4)                              0.04       3.23 r
+  U27151/X (SAEDRVT14_EN2_4)                              0.04       3.28 f
+  U27149/X (SAEDRVT14_BUF_20)                             0.03       3.31 f
+  U25518/X (SAEDRVT14_EN3_3)                              0.07       3.38 f
+  U25720/X (SAEDRVT14_AN2B_MM_20)                         0.03       3.41 f
+  U25721/X (SAEDRVT14_INV_S_20)                           0.01       3.42 r
+  U27190/X (SAEDRVT14_ND2_MM_16)                          0.01       3.43 f
+  U27188/X (SAEDRVT14_EN2_4)                              0.05       3.48 r
+  U25806/X (SAEDRVT14_INV_S_16)                           0.02       3.50 f
+  U27189/X (SAEDRVT14_EN3_3)                              0.07       3.57 r
+  u_muldiv_mult_125_S2_19_9/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.63 r
+  U25362/X (SAEDRVT14_BUF_20)                             0.04       3.67 r
+  U25361/X (SAEDRVT14_AOI21_8)                            0.03       3.70 f
+  U27039/X (SAEDRVT14_NR2_MM_16)                          0.02       3.72 r
+  u_muldiv_mult_125_S2_21_9/S (SAEDRVT14_ADDF_V1_2)       0.09       3.80 f
+  u_muldiv_mult_125_S2_22_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.87 f
+  u_muldiv_mult_125_S2_23_8/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.93 f
+  u_muldiv_mult_125_S2_24_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.02 f
+  u_muldiv_mult_125_S2_25_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.10 f
+  u_muldiv_mult_125_S2_26_8/S (SAEDRVT14_ADDF_V1_2)       0.10       4.20 r
+  u_muldiv_mult_125_S2_27_7/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.26 r
+  u_muldiv_mult_125_S2_28_7/S (SAEDRVT14_ADDF_V1_2)       0.10       4.36 f
+  u_muldiv_mult_125_S2_29_6/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.43 f
+  u_muldiv_mult_125_S2_30_6/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.51 f
+  u_muldiv_mult_125_S2_31_6/S (SAEDRVT14_ADDF_V1_2)       0.10       4.61 r
+  u_muldiv_mult_125_S2_32_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.67 r
+  u_muldiv_mult_125_S2_33_5/CO (SAEDRVT14_ADDF_V2_2)      0.09       4.76 r
+  u_muldiv_mult_125_S2_34_5/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.84 r
+  u_muldiv_mult_125_S2_35_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.91 r
+  u_muldiv_mult_125_S2_36_5/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.98 r
+  u_muldiv_mult_125_S2_37_5/S (SAEDRVT14_ADDF_V1_2)       0.11       5.09 f
+  u_muldiv_mult_125_S2_38_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.16 f
+  u_muldiv_mult_125_S2_39_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.23 f
+  u_muldiv_mult_125_S2_40_4/S (SAEDRVT14_ADDF_V1_2)       0.10       5.33 r
+  u_muldiv_mult_125_S2_41_3/CO (SAEDRVT14_ADDF_V2_2)      0.09       5.41 r
+  u_muldiv_mult_125_S2_42_3/CO (SAEDRVT14_ADDF_V2_2)      0.05       5.47 r
+  u_muldiv_mult_125_S2_43_3/CO (SAEDRVT14_ADDF_V2_2)      0.08       5.55 r
+  u_muldiv_mult_125_S2_44_3/S (SAEDRVT14_ADDF_V2_2)       0.10       5.64 f
+  u_muldiv_mult_125_S2_45_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.71 f
+  u_muldiv_mult_125_S2_46_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.78 f
+  u_muldiv_mult_125_S2_47_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.84 f
+  u_muldiv_mult_125_S2_48_2/S (SAEDRVT14_ADDF_V1_2)       0.10       5.95 r
+  u_muldiv_mult_125_S2_49_1/CO (SAEDRVT14_ADDF_V2_2)      0.09       6.04 r
+  u_muldiv_mult_125_S2_50_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.11 r
+  u_muldiv_mult_125_S2_51_1/S (SAEDRVT14_ADDF_V1_2)       0.10       6.21 f
+  u_muldiv_mult_125_S1_52_0/CO (SAEDRVT14_ADDF_V2_2)      0.08       6.29 f
+  u_muldiv_mult_125_S1_53_0/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.36 f
+  u_muldiv_mult_125_S1_54_0/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.42 f
+  u_muldiv_mult_125_S1_55_0/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.49 f
+  u_muldiv_mult_125_S1_56_0/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.56 f
+  u_muldiv_mult_125_S1_57_0/S (SAEDRVT14_ADDF_V1_2)       0.10       6.66 r
+  U27400/X (SAEDRVT14_AO22_0P5)                           0.10       6.76 r
+  u_muldiv_mult_result_q_reg_25_/D (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.76 r
+  data arrival time                                                  6.76
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_mult_result_q_reg_25_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.06       6.59
+  data required time                                                 6.59
+  --------------------------------------------------------------------------
+  data required time                                                 6.59
+  data arrival time                                                 -6.76
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.17
+
+
+  Startpoint: u_decode_inst_q_reg_24_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_exec_result_q_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_24_/CK (SAEDRVT14_FDPRB_V3_2)       0.00 #     0.00 r
+  u_decode_inst_q_reg_24_/Q (SAEDRVT14_FDPRB_V3_2)        0.10       0.10 r
+  U29344/X (SAEDRVT14_BUF_CDC_2)                          0.21       0.31 r
+  U28963/X (SAEDRVT14_NR2_MM_6)                           0.22       0.53 f
+  U28809/X (SAEDRVT14_ND2_CDC_1)                          0.18       0.72 r
+  U28915/CKOUTB (SAEDRVT14_CLKSPLT_1)                     0.13       0.85 f
+  U29011/X (SAEDRVT14_INV_4)                              0.24       1.09 r
+  U36106/X (SAEDRVT14_OAI22_0P5)                          0.23       1.32 f
+  U44183/X (SAEDRVT14_AOI21_0P5)                          0.16       1.49 r
+  U44184/X (SAEDRVT14_AN4_1)                              0.10       1.59 r
+  U29048/X (SAEDRVT14_AN4_1)                              0.08       1.68 r
+  U36105/X (SAEDRVT14_OAI22_4)                            0.05       1.72 f
+  U25929/X (SAEDRVT14_AOI21_1)                            0.10       1.82 r
+  U34126/X (SAEDRVT14_ND2_MM_4)                           0.04       1.87 f
+  U20022/X (SAEDRVT14_OR4_2)                              0.07       1.94 f
+  U26540/X (SAEDRVT14_INV_S_16)                           0.03       1.97 r
+  U26538/X (SAEDRVT14_BUF_16)                             0.03       2.00 r
+  U26537/CKOUT (SAEDRVT14_CLKSPLT_8)                      0.25       2.25 r
+  U35833/X (SAEDRVT14_OAI22_2)                            0.58       2.83 f
+  U31467/X (SAEDRVT14_INV_S_2)                            0.55       3.37 r
+  u_exec_u_alu_sub_76_U2_4/CO (SAEDRVT14_ADDF_V2_0P5)     0.23       3.61 r
+  u_exec_u_alu_sub_76_U2_5/CO (SAEDRVT14_ADDF_V1_1)       0.11       3.71 r
+  u_exec_u_alu_sub_76_U2_6/CO (SAEDRVT14_ADDF_V1_1)       0.09       3.81 r
+  u_exec_u_alu_sub_76_U2_7/CO (SAEDRVT14_ADDF_V2_0P5)     0.12       3.92 r
+  u_exec_u_alu_sub_76_U2_8/CO (SAEDRVT14_ADDF_V1_1)       0.11       4.03 r
+  u_exec_u_alu_sub_76_U2_9/CO (SAEDRVT14_ADDF_V1_1)       0.10       4.13 r
+  u_exec_u_alu_sub_76_U2_10/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.22 r
+  u_exec_u_alu_sub_76_U2_11/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.32 r
+  u_exec_u_alu_sub_76_U2_12/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.42 r
+  u_exec_u_alu_sub_76_U2_13/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.51 r
+  u_exec_u_alu_sub_76_U2_14/CO (SAEDRVT14_ADDF_V1_1)      0.09       4.61 r
+  u_exec_u_alu_sub_76_U2_15/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.71 r
+  u_exec_u_alu_sub_76_U2_16/CO (SAEDRVT14_ADDF_V1_1)      0.09       4.80 r
+  u_exec_u_alu_sub_76_U2_17/CO (SAEDRVT14_ADDF_V1_1)      0.09       4.89 r
+  u_exec_u_alu_sub_76_U2_18/CO (SAEDRVT14_ADDF_V1_1)      0.09       4.99 r
+  u_exec_u_alu_sub_76_U2_19/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.08 r
+  u_exec_u_alu_sub_76_U2_20/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.18 r
+  u_exec_u_alu_sub_76_U2_21/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.27 r
+  u_exec_u_alu_sub_76_U2_22/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.37 r
+  u_exec_u_alu_sub_76_U2_23/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.46 r
+  u_exec_u_alu_sub_76_U2_24/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.55 r
+  u_exec_u_alu_sub_76_U2_25/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.65 r
+  u_exec_u_alu_sub_76_U2_26/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.74 r
+  u_exec_u_alu_sub_76_U2_27/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.84 r
+  u_exec_u_alu_sub_76_U2_28/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.93 r
+  u_exec_u_alu_sub_76_U2_29/CO (SAEDRVT14_ADDF_V1_1)      0.10       6.03 r
+  u_exec_u_alu_sub_76_U2_30/CO (SAEDRVT14_ADDF_V1_1)      0.09       6.12 r
+  U38833/X (SAEDRVT14_EN3_1)                              0.15       6.27 r
+  U39539/X (SAEDRVT14_OA2BB2_V1_1)                        0.11       6.38 f
+  U29276/X (SAEDRVT14_INV_1)                              0.09       6.47 r
+  U35812/X (SAEDRVT14_AO2BB2_4)                           0.08       6.55 r
+  U39538/X (SAEDRVT14_AO33_1)                             0.09       6.64 r
+  U35014/X (SAEDRVT14_OR4_2)                              0.07       6.70 r
+  U37961/X (SAEDRVT14_OR4_1)                              0.06       6.77 r
+  u_exec_result_q_reg_0_/D (SAEDRVT14_FDPRBQ_V2LP_1)      0.00       6.77 r
+  data arrival time                                                  6.77
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_exec_result_q_reg_0_/CK (SAEDRVT14_FDPRBQ_V2LP_1)     0.00       6.65 r
+  library setup time                                     -0.04       6.61
+  data required time                                                 6.61
+  --------------------------------------------------------------------------
+  data required time                                                 6.61
+  data arrival time                                                 -6.77
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.16
+
+
+  Startpoint: u_decode_inst_q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_mult_result_q_reg_24_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_17_/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00 #     0.00 r
+  u_decode_inst_q_reg_17_/Q (SAEDRVT14_FDPRBQ_V2_1)       0.08       0.08 r
+  U29225/X (SAEDRVT14_INV_4)                              0.03       0.11 f
+  U25890/X (SAEDRVT14_INV_S_5)                            0.11       0.23 r
+  U30816/X (SAEDRVT14_INV_20)                             0.07       0.29 f
+  U29499/X (SAEDRVT14_BUF_S_1)                            0.16       0.46 f
+  U28973/X (SAEDRVT14_AN3_1)                              0.25       0.70 f
+  U31213/X (SAEDRVT14_ND2_CDC_0P5)                        0.39       1.09 r
+  U29032/X (SAEDRVT14_BUF_S_1)                            0.41       1.50 r
+  U28483/X (SAEDRVT14_OAI22_3)                            0.15       1.65 f
+  U28930/X (SAEDRVT14_NR4_0P75)                           0.10       1.75 r
+  U30826/X (SAEDRVT14_AO31_4)                             0.04       1.79 r
+  U27147/X (SAEDRVT14_OA221_4)                            0.07       1.86 r
+  U28067/CKOUTB (SAEDRVT14_CLKSPLT_8)                     0.07       1.93 f
+  U25851/X (SAEDRVT14_ND2_MM_16)                          0.02       1.95 r
+  U32350/X (SAEDRVT14_NR2_MM_16)                          0.02       1.96 f
+  U25347/X (SAEDRVT14_ND2_16)                             0.01       1.98 r
+  U33168/X (SAEDRVT14_EN3_3)                              0.08       2.05 r
+  U33345/X (SAEDRVT14_INV_S_20)                           0.02       2.08 f
+  U31984/X (SAEDRVT14_EN3_3)                              0.09       2.16 r
+  U33171/X (SAEDRVT14_EN3_3)                              0.07       2.23 f
+  U33208/X (SAEDRVT14_EN2_4)                              0.05       2.28 r
+  U32132/X (SAEDRVT14_EN2_4)                              0.05       2.33 f
+  U32133/X (SAEDRVT14_INV_S_20)                           0.02       2.35 r
+  U27444/X (SAEDRVT14_ND2_MM_10)                          0.02       2.36 f
+  U31755/X (SAEDRVT14_OAI21_V1_8)                         0.02       2.39 r
+  U27698/X (SAEDRVT14_INV_S_16)                           0.02       2.40 f
+  U32761/X (SAEDRVT14_EN3_3)                              0.08       2.48 r
+  U27648/X (SAEDRVT14_INV_S_20)                           0.02       2.50 f
+  U32854/X (SAEDRVT14_EN2_4)                              0.04       2.54 f
+  U32850/X (SAEDRVT14_EN2_4)                              0.05       2.59 r
+  U32767/X (SAEDRVT14_INV_S_20)                           0.02       2.61 f
+  U27459/X (SAEDRVT14_ND2_MM_10)                          0.01       2.63 r
+  U32849/X (SAEDRVT14_OAI21_V1_8)                         0.04       2.66 f
+  U25595/X (SAEDRVT14_INV_S_20)                           0.02       2.68 r
+  U33178/X (SAEDRVT14_EN3_3)                              0.06       2.74 f
+  U32760/X (SAEDRVT14_EN2_4)                              0.06       2.81 r
+  U31955/X (SAEDRVT14_EN2_4)                              0.05       2.85 f
+  U27170/X (SAEDRVT14_EN2_4)                              0.06       2.91 r
+  U27169/X (SAEDRVT14_EN2_4)                              0.05       2.96 f
+  U27168/X (SAEDRVT14_EN2_4)                              0.04       3.00 f
+  U27167/X (SAEDRVT14_EN2_4)                              0.05       3.05 r
+  U27160/X (SAEDRVT14_BUF_20)                             0.03       3.08 r
+  U27159/X (SAEDRVT14_INV_S_20)                           0.01       3.09 f
+  U27158/X (SAEDRVT14_ND2_MM_16)                          0.01       3.11 r
+  U27157/X (SAEDRVT14_ND2_MM_16)                          0.01       3.12 f
+  U27156/X (SAEDRVT14_EN2_4)                              0.05       3.17 r
+  U27153/X (SAEDRVT14_INV_S_20)                           0.02       3.19 f
+  U27152/X (SAEDRVT14_EN2_4)                              0.04       3.23 r
+  U27151/X (SAEDRVT14_EN2_4)                              0.04       3.28 f
+  U27149/X (SAEDRVT14_BUF_20)                             0.03       3.31 f
+  U25518/X (SAEDRVT14_EN3_3)                              0.07       3.38 f
+  U25720/X (SAEDRVT14_AN2B_MM_20)                         0.03       3.41 f
+  U25721/X (SAEDRVT14_INV_S_20)                           0.01       3.42 r
+  U27190/X (SAEDRVT14_ND2_MM_16)                          0.01       3.43 f
+  U27188/X (SAEDRVT14_EN2_4)                              0.05       3.48 r
+  U25806/X (SAEDRVT14_INV_S_16)                           0.02       3.50 f
+  U27189/X (SAEDRVT14_EN3_3)                              0.07       3.57 r
+  u_muldiv_mult_125_S2_19_9/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.63 r
+  U25362/X (SAEDRVT14_BUF_20)                             0.04       3.67 r
+  U25361/X (SAEDRVT14_AOI21_8)                            0.03       3.70 f
+  U27039/X (SAEDRVT14_NR2_MM_16)                          0.02       3.72 r
+  u_muldiv_mult_125_S2_21_9/S (SAEDRVT14_ADDF_V1_2)       0.09       3.80 f
+  u_muldiv_mult_125_S2_22_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.87 f
+  u_muldiv_mult_125_S2_23_8/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.93 f
+  u_muldiv_mult_125_S2_24_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.02 f
+  u_muldiv_mult_125_S2_25_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.10 f
+  u_muldiv_mult_125_S2_26_8/S (SAEDRVT14_ADDF_V1_2)       0.10       4.20 r
+  u_muldiv_mult_125_S2_27_7/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.26 r
+  u_muldiv_mult_125_S2_28_7/S (SAEDRVT14_ADDF_V1_2)       0.10       4.36 f
+  u_muldiv_mult_125_S2_29_6/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.43 f
+  u_muldiv_mult_125_S2_30_6/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.51 f
+  u_muldiv_mult_125_S2_31_6/S (SAEDRVT14_ADDF_V1_2)       0.10       4.61 r
+  u_muldiv_mult_125_S2_32_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.67 r
+  u_muldiv_mult_125_S2_33_5/CO (SAEDRVT14_ADDF_V2_2)      0.09       4.76 r
+  u_muldiv_mult_125_S2_34_5/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.84 r
+  u_muldiv_mult_125_S2_35_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.91 r
+  u_muldiv_mult_125_S2_36_5/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.98 r
+  u_muldiv_mult_125_S2_37_5/S (SAEDRVT14_ADDF_V1_2)       0.11       5.09 f
+  u_muldiv_mult_125_S2_38_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.16 f
+  u_muldiv_mult_125_S2_39_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.23 f
+  u_muldiv_mult_125_S2_40_4/S (SAEDRVT14_ADDF_V1_2)       0.10       5.33 r
+  u_muldiv_mult_125_S2_41_3/CO (SAEDRVT14_ADDF_V2_2)      0.09       5.41 r
+  u_muldiv_mult_125_S2_42_3/CO (SAEDRVT14_ADDF_V2_2)      0.05       5.47 r
+  u_muldiv_mult_125_S2_43_3/CO (SAEDRVT14_ADDF_V2_2)      0.08       5.55 r
+  u_muldiv_mult_125_S2_44_3/S (SAEDRVT14_ADDF_V2_2)       0.10       5.64 f
+  u_muldiv_mult_125_S2_45_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.71 f
+  u_muldiv_mult_125_S2_46_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.78 f
+  u_muldiv_mult_125_S2_47_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.84 f
+  u_muldiv_mult_125_S2_48_2/S (SAEDRVT14_ADDF_V1_2)       0.10       5.95 r
+  u_muldiv_mult_125_S2_49_1/CO (SAEDRVT14_ADDF_V2_2)      0.09       6.04 r
+  u_muldiv_mult_125_S2_50_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.11 r
+  u_muldiv_mult_125_S2_51_1/S (SAEDRVT14_ADDF_V1_2)       0.10       6.21 f
+  u_muldiv_mult_125_S1_52_0/CO (SAEDRVT14_ADDF_V2_2)      0.08       6.29 f
+  u_muldiv_mult_125_S1_53_0/CO (SAEDRVT14_ADDF_V1_2)      0.06       6.36 f
+  u_muldiv_mult_125_S1_54_0/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.42 f
+  u_muldiv_mult_125_S1_55_0/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.49 f
+  u_muldiv_mult_125_S1_56_0/S (SAEDRVT14_ADDF_V1_2)       0.10       6.59 r
+  U27401/X (SAEDRVT14_AO22_0P5)                           0.10       6.70 r
+  u_muldiv_mult_result_q_reg_24_/D (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.70 r
+  data arrival time                                                  6.70
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_mult_result_q_reg_24_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.06       6.59
+  data required time                                                 6.59
+  --------------------------------------------------------------------------
+  data required time                                                 6.59
+  data arrival time                                                 -6.70
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.10
+
+
+  Startpoint: u_decode_inst_q_reg_24_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_exec_result_q_reg_31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_24_/CK (SAEDRVT14_FDPRB_V3_2)       0.00 #     0.00 r
+  u_decode_inst_q_reg_24_/Q (SAEDRVT14_FDPRB_V3_2)        0.10       0.10 r
+  U29344/X (SAEDRVT14_BUF_CDC_2)                          0.21       0.31 r
+  U28963/X (SAEDRVT14_NR2_MM_6)                           0.22       0.53 f
+  U28809/X (SAEDRVT14_ND2_CDC_1)                          0.18       0.72 r
+  U28915/CKOUTB (SAEDRVT14_CLKSPLT_1)                     0.13       0.85 f
+  U29011/X (SAEDRVT14_INV_4)                              0.24       1.09 r
+  U36106/X (SAEDRVT14_OAI22_0P5)                          0.23       1.32 f
+  U44183/X (SAEDRVT14_AOI21_0P5)                          0.16       1.49 r
+  U44184/X (SAEDRVT14_AN4_1)                              0.10       1.59 r
+  U29048/X (SAEDRVT14_AN4_1)                              0.08       1.68 r
+  U36105/X (SAEDRVT14_OAI22_4)                            0.05       1.72 f
+  U25929/X (SAEDRVT14_AOI21_1)                            0.10       1.82 r
+  U34126/X (SAEDRVT14_ND2_MM_4)                           0.04       1.87 f
+  U20022/X (SAEDRVT14_OR4_2)                              0.07       1.94 f
+  U26540/X (SAEDRVT14_INV_S_16)                           0.03       1.97 r
+  U26538/X (SAEDRVT14_BUF_16)                             0.03       2.00 r
+  U26537/CKOUT (SAEDRVT14_CLKSPLT_8)                      0.25       2.25 r
+  U35833/X (SAEDRVT14_OAI22_2)                            0.58       2.83 f
+  U31467/X (SAEDRVT14_INV_S_2)                            0.55       3.37 r
+  u_exec_u_alu_sub_76_U2_4/CO (SAEDRVT14_ADDF_V2_0P5)     0.23       3.61 r
+  u_exec_u_alu_sub_76_U2_5/CO (SAEDRVT14_ADDF_V1_1)       0.11       3.71 r
+  u_exec_u_alu_sub_76_U2_6/CO (SAEDRVT14_ADDF_V1_1)       0.09       3.81 r
+  u_exec_u_alu_sub_76_U2_7/CO (SAEDRVT14_ADDF_V2_0P5)     0.12       3.92 r
+  u_exec_u_alu_sub_76_U2_8/CO (SAEDRVT14_ADDF_V1_1)       0.11       4.03 r
+  u_exec_u_alu_sub_76_U2_9/CO (SAEDRVT14_ADDF_V1_1)       0.10       4.13 r
+  u_exec_u_alu_sub_76_U2_10/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.22 r
+  u_exec_u_alu_sub_76_U2_11/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.32 r
+  u_exec_u_alu_sub_76_U2_12/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.42 r
+  u_exec_u_alu_sub_76_U2_13/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.51 r
+  u_exec_u_alu_sub_76_U2_14/CO (SAEDRVT14_ADDF_V1_1)      0.09       4.61 r
+  u_exec_u_alu_sub_76_U2_15/CO (SAEDRVT14_ADDF_V1_1)      0.10       4.71 r
+  u_exec_u_alu_sub_76_U2_16/CO (SAEDRVT14_ADDF_V1_1)      0.09       4.80 r
+  u_exec_u_alu_sub_76_U2_17/CO (SAEDRVT14_ADDF_V1_1)      0.09       4.89 r
+  u_exec_u_alu_sub_76_U2_18/CO (SAEDRVT14_ADDF_V1_1)      0.09       4.99 r
+  u_exec_u_alu_sub_76_U2_19/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.08 r
+  u_exec_u_alu_sub_76_U2_20/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.18 r
+  u_exec_u_alu_sub_76_U2_21/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.27 r
+  u_exec_u_alu_sub_76_U2_22/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.37 r
+  u_exec_u_alu_sub_76_U2_23/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.46 r
+  u_exec_u_alu_sub_76_U2_24/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.55 r
+  u_exec_u_alu_sub_76_U2_25/CO (SAEDRVT14_ADDF_V1_1)      0.09       5.65 r
+  u_exec_u_alu_sub_76_U2_26/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.74 r
+  u_exec_u_alu_sub_76_U2_27/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.84 r
+  u_exec_u_alu_sub_76_U2_28/CO (SAEDRVT14_ADDF_V1_1)      0.10       5.93 r
+  u_exec_u_alu_sub_76_U2_29/CO (SAEDRVT14_ADDF_V1_1)      0.10       6.03 r
+  u_exec_u_alu_sub_76_U2_30/CO (SAEDRVT14_ADDF_V1_1)      0.09       6.12 r
+  U38833/X (SAEDRVT14_EN3_1)                              0.15       6.27 r
+  U34227/X (SAEDRVT14_INV_S_0P5)                          0.12       6.39 f
+  U34957/X (SAEDRVT14_OAI22_0P75)                         0.12       6.51 r
+  U38844/X (SAEDRVT14_OR4_1)                              0.12       6.62 r
+  U38842/X (SAEDRVT14_OR4_1)                              0.07       6.70 r
+  u_exec_result_q_reg_31_/D (SAEDRVT14_FDPRBQ_V2LP_1)     0.00       6.70 r
+  data arrival time                                                  6.70
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_exec_result_q_reg_31_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.04       6.61
+  data required time                                                 6.61
+  --------------------------------------------------------------------------
+  data required time                                                 6.61
+  data arrival time                                                 -6.70
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.08
+
+
+  Startpoint: u_decode_inst_q_reg_24_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_csr_csr_sepc_q_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_24_/CK (SAEDRVT14_FDPRB_V3_2)       0.00 #     0.00 r
+  u_decode_inst_q_reg_24_/Q (SAEDRVT14_FDPRB_V3_2)        0.09       0.09 f
+  U29344/X (SAEDRVT14_BUF_CDC_2)                          0.19       0.27 f
+  U28963/X (SAEDRVT14_NR2_MM_6)                           0.24       0.52 r
+  U28809/X (SAEDRVT14_ND2_CDC_1)                          0.23       0.74 f
+  U28915/CKOUTB (SAEDRVT14_CLKSPLT_1)                     0.15       0.89 r
+  U29011/X (SAEDRVT14_INV_4)                              0.22       1.10 f
+  U36106/X (SAEDRVT14_OAI22_0P5)                          0.24       1.34 r
+  U44183/X (SAEDRVT14_AOI21_0P5)                          0.17       1.51 f
+  U44184/X (SAEDRVT14_AN4_1)                              0.09       1.60 f
+  U29048/X (SAEDRVT14_AN4_1)                              0.08       1.68 f
+  U36105/X (SAEDRVT14_OAI22_4)                            0.05       1.73 r
+  U25929/X (SAEDRVT14_AOI21_1)                            0.09       1.82 f
+  U34126/X (SAEDRVT14_ND2_MM_4)                           0.06       1.88 r
+  U20022/X (SAEDRVT14_OR4_2)                              0.07       1.95 r
+  U26540/X (SAEDRVT14_INV_S_16)                           0.03       1.98 f
+  U26538/X (SAEDRVT14_BUF_16)                             0.03       2.01 f
+  U29335/X (SAEDRVT14_INV_S_1P5)                          0.21       2.22 r
+  U27527/X (SAEDRVT14_AN2_0P5)                            0.12       2.34 r
+  U27526/X (SAEDRVT14_OR2_MM_12)                          0.04       2.38 r
+  U27538/X (SAEDRVT14_ND2_MM_12)                          0.01       2.39 f
+  U32802/X (SAEDRVT14_AOI22_6)                            0.07       2.45 r
+  U27546/X (SAEDRVT14_ND2_16)                             0.02       2.48 f
+  U27551/X (SAEDRVT14_ND2_MM_16)                          0.02       2.49 r
+  U27542/X (SAEDRVT14_ND2_MM_16)                          0.02       2.51 f
+  U27569/X (SAEDRVT14_OR2_MM_12)                          0.03       2.53 f
+  u_exec_sub_277_C332_U105/X (SAEDRVT14_AOI22_6)          0.06       2.60 r
+  U32796/X (SAEDRVT14_ND2_8)                              0.03       2.62 f
+  U27518/X (SAEDRVT14_ND2_16)                             0.02       2.64 r
+  U32797/X (SAEDRVT14_ND2_16)                             0.02       2.66 f
+  U32799/X (SAEDRVT14_OR2_MM_12)                          0.03       2.69 f
+  U33840/X (SAEDRVT14_AOI22_6)                            0.06       2.75 r
+  U33823/X (SAEDRVT14_ND2_16)                             0.02       2.77 f
+  U27562/X (SAEDRVT14_ND2_16)                             0.02       2.80 r
+  U27494/X (SAEDRVT14_ND2_16)                             0.02       2.82 f
+  U27566/X (SAEDRVT14_OR2_MM_12)                          0.03       2.85 f
+  u_exec_sub_277_C332_U113/X (SAEDRVT14_AOI22_6)          0.06       2.91 r
+  U27595/X (SAEDRVT14_AN2_MM_3)                           0.04       2.95 r
+  U34907/X (SAEDRVT14_NR2_MM_6)                           0.02       2.97 f
+  U27557/X (SAEDRVT14_OR2_MM_20)                          0.04       3.01 f
+  U27554/X (SAEDRVT14_NR2_MM_16)                          0.01       3.02 r
+  U27580/X (SAEDRVT14_AO2BB2_4)                           0.06       3.09 f
+  U27558/X (SAEDRVT14_INV_S_16)                           0.02       3.11 r
+  U28311/X (SAEDRVT14_AN2_8)                              0.03       3.13 r
+  U27614/X (SAEDRVT14_OR2_MM_12)                          0.02       3.15 r
+  U27613/X (SAEDRVT14_ND2_16)                             0.02       3.17 f
+  U32816/X (SAEDRVT14_NR2_MM_12)                          0.02       3.19 r
+  U32814/X (SAEDRVT14_AO2BB2_4)                           0.06       3.25 f
+  U32813/X (SAEDRVT14_INV_12)                             0.02       3.27 r
+  U32842/X (SAEDRVT14_ND2_16)                             0.01       3.28 f
+  U34864/X (SAEDRVT14_OA2BB2_V1_4)                        0.04       3.32 r
+  U30899/X (SAEDRVT14_INV_S_16)                           0.04       3.36 f
+  U27581/X (SAEDRVT14_OR2_MM_12)                          0.03       3.39 f
+  U32825/X (SAEDRVT14_AOI22_6)                            0.06       3.45 r
+  U33819/X (SAEDRVT14_OR2_MM_12)                          0.04       3.49 r
+  U33807/X (SAEDRVT14_AN2_8)                              0.03       3.52 r
+  U27515/X (SAEDRVT14_ND2_8)                              0.02       3.54 f
+  U27498/X (SAEDRVT14_ND2_MM_10)                          0.02       3.55 r
+  U27742/X (SAEDRVT14_AN2_MM_20)                          0.04       3.60 r
+  U33824/X (SAEDRVT14_ND2_16)                             0.01       3.61 f
+  U34060/X (SAEDRVT14_OA2BB2_V1_4)                        0.04       3.65 r
+  U32827/X (SAEDRVT14_INV_12)                             0.03       3.67 f
+  U32798/X (SAEDRVT14_OR2_MM_12)                          0.03       3.70 f
+  U32828/X (SAEDRVT14_AOI22_6)                            0.06       3.76 r
+  U27619/X (SAEDRVT14_ND2_CDC_4)                          0.03       3.79 f
+  U27618/X (SAEDRVT14_AN2_4)                              0.04       3.84 f
+  U34307/X (SAEDRVT14_AN2B_MM_12)                         0.04       3.88 r
+  U34425/X (SAEDRVT14_INV_S_16)                           0.01       3.89 f
+  U33808/X (SAEDRVT14_OR2_MM_12)                          0.02       3.91 f
+  U33841/X (SAEDRVT14_AOI22_6)                            0.06       3.98 r
+  U30900/X (SAEDRVT14_ND2_16)                             0.02       4.00 f
+  U28339/X (SAEDRVT14_ND2_MM_16)                          0.03       4.03 r
+  U28338/X (SAEDRVT14_ND2_MM_16)                          0.02       4.05 f
+  U27575/X (SAEDRVT14_NR2_MM_12)                          0.02       4.06 r
+  U33816/X (SAEDRVT14_AO2BB2_4)                           0.06       4.12 f
+  U33809/X (SAEDRVT14_INV_12)                             0.02       4.14 r
+  U34990/X (SAEDRVT14_AN2_8)                              0.03       4.17 r
+  U34452/X (SAEDRVT14_OR2_MM_12)                          0.03       4.20 r
+  U27495/X (SAEDRVT14_ND2_16)                             0.02       4.21 f
+  U27753/X (SAEDRVT14_OR2_MM_12)                          0.03       4.24 f
+  U27750/X (SAEDRVT14_AN2_MM_12)                          0.02       4.26 f
+  U27751/X (SAEDRVT14_NR2_MM_16)                          0.02       4.28 r
+  U30902/X (SAEDRVT14_ND2_16)                             0.02       4.30 f
+  U30901/X (SAEDRVT14_ND2_MM_16)                          0.03       4.33 r
+  U32834/X (SAEDRVT14_ND2_MM_16)                          0.03       4.36 f
+  U27514/X (SAEDRVT14_INV_S_16)                           0.01       4.37 r
+  U30897/X (SAEDRVT14_ND2_16)                             0.01       4.38 f
+  U30896/X (SAEDRVT14_AOI21_V1_8)                         0.05       4.44 r
+  U27615/X (SAEDRVT14_NR2_MM_16)                          0.03       4.47 f
+  U33420/X (SAEDRVT14_NR2_MM_12)                          0.02       4.49 r
+  U33422/X (SAEDRVT14_EN2_4)                              0.06       4.55 f
+  U27560/X (SAEDRVT14_NR2_MM_16)                          0.02       4.57 r
+  U27559/X (SAEDRVT14_NR2_MM_12)                          0.01       4.58 f
+  U33426/X (SAEDRVT14_MUXI3_4)                            0.05       4.63 r
+  U27552/X (SAEDRVT14_NR2_MM_10)                          0.02       4.65 f
+  U33428/X (SAEDRVT14_MUX2_MM_4)                          0.04       4.69 f
+  U27507/X (SAEDRVT14_NR2_MM_16)                          0.02       4.71 r
+  U27579/X (SAEDRVT14_NR2_MM_16)                          0.01       4.72 f
+  U27578/X (SAEDRVT14_OR2_MM_20)                          0.04       4.76 f
+  U33445/X (SAEDRVT14_INV_S_20)                           0.01       4.77 r
+  U33451/X (SAEDRVT14_OR2_MM_20)                          0.03       4.80 r
+  U27583/X (SAEDRVT14_INV_20)                             0.03       4.84 f
+  U29220/X (SAEDRVT14_AN3_0P5)                            0.15       4.98 f
+  U38820/X (SAEDRVT14_OAI21_0P5)                          0.24       5.23 r
+  U31487/X (SAEDRVT14_BUF_S_1)                            0.65       5.88 r
+  U29347/X (SAEDRVT14_OAI21_0P5)                          0.30       6.17 f
+  U29687/X (SAEDRVT14_NR2_MM_1)                           0.15       6.32 r
+  U29685/X (SAEDRVT14_ND2_CDC_1)                          0.11       6.44 f
+  U30632/X (SAEDRVT14_NR2_MM_1)                           0.10       6.53 r
+  U30630/X (SAEDRVT14_OAI21_0P5)                          0.12       6.65 f
+  u_csr_csr_sepc_q_reg_9_/D (SAEDRVT14_FDPRBQ_V2LP_1)     0.00       6.65 f
+  data arrival time                                                  6.65
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_csr_csr_sepc_q_reg_9_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.05       6.60
+  data required time                                                 6.60
+  --------------------------------------------------------------------------
+  data required time                                                 6.60
+  data arrival time                                                 -6.65
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: u_decode_inst_q_reg_17_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_mult_result_q_reg_23_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_17_/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00 #     0.00 r
+  u_decode_inst_q_reg_17_/Q (SAEDRVT14_FDPRBQ_V2_1)       0.08       0.08 r
+  U29225/X (SAEDRVT14_INV_4)                              0.03       0.11 f
+  U25890/X (SAEDRVT14_INV_S_5)                            0.11       0.23 r
+  U30816/X (SAEDRVT14_INV_20)                             0.07       0.29 f
+  U29499/X (SAEDRVT14_BUF_S_1)                            0.16       0.46 f
+  U28973/X (SAEDRVT14_AN3_1)                              0.25       0.70 f
+  U31213/X (SAEDRVT14_ND2_CDC_0P5)                        0.39       1.09 r
+  U29032/X (SAEDRVT14_BUF_S_1)                            0.41       1.50 r
+  U28483/X (SAEDRVT14_OAI22_3)                            0.15       1.65 f
+  U28930/X (SAEDRVT14_NR4_0P75)                           0.10       1.75 r
+  U30826/X (SAEDRVT14_AO31_4)                             0.04       1.79 r
+  U27147/X (SAEDRVT14_OA221_4)                            0.07       1.86 r
+  U28067/CKOUTB (SAEDRVT14_CLKSPLT_8)                     0.07       1.93 f
+  U25851/X (SAEDRVT14_ND2_MM_16)                          0.02       1.95 r
+  U32350/X (SAEDRVT14_NR2_MM_16)                          0.02       1.96 f
+  U25347/X (SAEDRVT14_ND2_16)                             0.01       1.98 r
+  U33168/X (SAEDRVT14_EN3_3)                              0.08       2.05 r
+  U33345/X (SAEDRVT14_INV_S_20)                           0.02       2.08 f
+  U31984/X (SAEDRVT14_EN3_3)                              0.09       2.16 r
+  U33171/X (SAEDRVT14_EN3_3)                              0.07       2.23 f
+  U33208/X (SAEDRVT14_EN2_4)                              0.05       2.28 r
+  U32132/X (SAEDRVT14_EN2_4)                              0.05       2.33 f
+  U32133/X (SAEDRVT14_INV_S_20)                           0.02       2.35 r
+  U27444/X (SAEDRVT14_ND2_MM_10)                          0.02       2.36 f
+  U31755/X (SAEDRVT14_OAI21_V1_8)                         0.02       2.39 r
+  U27698/X (SAEDRVT14_INV_S_16)                           0.02       2.40 f
+  U32761/X (SAEDRVT14_EN3_3)                              0.08       2.48 r
+  U27648/X (SAEDRVT14_INV_S_20)                           0.02       2.50 f
+  U32854/X (SAEDRVT14_EN2_4)                              0.04       2.54 f
+  U32850/X (SAEDRVT14_EN2_4)                              0.05       2.59 r
+  U32767/X (SAEDRVT14_INV_S_20)                           0.02       2.61 f
+  U27459/X (SAEDRVT14_ND2_MM_10)                          0.01       2.63 r
+  U32849/X (SAEDRVT14_OAI21_V1_8)                         0.04       2.66 f
+  U25595/X (SAEDRVT14_INV_S_20)                           0.02       2.68 r
+  U33178/X (SAEDRVT14_EN3_3)                              0.06       2.74 f
+  U32760/X (SAEDRVT14_EN2_4)                              0.06       2.81 r
+  U31955/X (SAEDRVT14_EN2_4)                              0.05       2.85 f
+  U27170/X (SAEDRVT14_EN2_4)                              0.06       2.91 r
+  U27169/X (SAEDRVT14_EN2_4)                              0.05       2.96 f
+  U27168/X (SAEDRVT14_EN2_4)                              0.04       3.00 f
+  U27167/X (SAEDRVT14_EN2_4)                              0.05       3.05 r
+  U27160/X (SAEDRVT14_BUF_20)                             0.03       3.08 r
+  U27159/X (SAEDRVT14_INV_S_20)                           0.01       3.09 f
+  U27158/X (SAEDRVT14_ND2_MM_16)                          0.01       3.11 r
+  U27157/X (SAEDRVT14_ND2_MM_16)                          0.01       3.12 f
+  U27156/X (SAEDRVT14_EN2_4)                              0.05       3.17 r
+  U27153/X (SAEDRVT14_INV_S_20)                           0.02       3.19 f
+  U27152/X (SAEDRVT14_EN2_4)                              0.04       3.23 r
+  U27151/X (SAEDRVT14_EN2_4)                              0.04       3.28 f
+  U27149/X (SAEDRVT14_BUF_20)                             0.03       3.31 f
+  U25518/X (SAEDRVT14_EN3_3)                              0.07       3.38 f
+  U25720/X (SAEDRVT14_AN2B_MM_20)                         0.03       3.41 f
+  U25721/X (SAEDRVT14_INV_S_20)                           0.01       3.42 r
+  U27190/X (SAEDRVT14_ND2_MM_16)                          0.01       3.43 f
+  U27188/X (SAEDRVT14_EN2_4)                              0.05       3.48 r
+  U25806/X (SAEDRVT14_INV_S_16)                           0.02       3.50 f
+  U27189/X (SAEDRVT14_EN3_3)                              0.07       3.57 r
+  u_muldiv_mult_125_S2_19_9/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.63 r
+  U25362/X (SAEDRVT14_BUF_20)                             0.04       3.67 r
+  U25361/X (SAEDRVT14_AOI21_8)                            0.03       3.70 f
+  U27039/X (SAEDRVT14_NR2_MM_16)                          0.02       3.72 r
+  u_muldiv_mult_125_S2_21_9/S (SAEDRVT14_ADDF_V1_2)       0.09       3.80 f
+  u_muldiv_mult_125_S2_22_8/CO (SAEDRVT14_ADDF_V1_2)      0.07       3.87 f
+  u_muldiv_mult_125_S2_23_8/CO (SAEDRVT14_ADDF_V1_2)      0.06       3.93 f
+  u_muldiv_mult_125_S2_24_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.02 f
+  u_muldiv_mult_125_S2_25_8/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.10 f
+  u_muldiv_mult_125_S2_26_8/S (SAEDRVT14_ADDF_V1_2)       0.10       4.20 r
+  u_muldiv_mult_125_S2_27_7/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.26 r
+  u_muldiv_mult_125_S2_28_7/S (SAEDRVT14_ADDF_V1_2)       0.10       4.36 f
+  u_muldiv_mult_125_S2_29_6/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.43 f
+  u_muldiv_mult_125_S2_30_6/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.51 f
+  u_muldiv_mult_125_S2_31_6/S (SAEDRVT14_ADDF_V1_2)       0.10       4.61 r
+  u_muldiv_mult_125_S2_32_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.67 r
+  u_muldiv_mult_125_S2_33_5/CO (SAEDRVT14_ADDF_V2_2)      0.09       4.76 r
+  u_muldiv_mult_125_S2_34_5/CO (SAEDRVT14_ADDF_V2_2)      0.08       4.84 r
+  u_muldiv_mult_125_S2_35_5/CO (SAEDRVT14_ADDF_V1_2)      0.06       4.91 r
+  u_muldiv_mult_125_S2_36_5/CO (SAEDRVT14_ADDF_V1_2)      0.07       4.98 r
+  u_muldiv_mult_125_S2_37_5/S (SAEDRVT14_ADDF_V1_2)       0.11       5.09 f
+  u_muldiv_mult_125_S2_38_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.16 f
+  u_muldiv_mult_125_S2_39_4/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.23 f
+  u_muldiv_mult_125_S2_40_4/S (SAEDRVT14_ADDF_V1_2)       0.10       5.33 r
+  u_muldiv_mult_125_S2_41_3/CO (SAEDRVT14_ADDF_V2_2)      0.09       5.41 r
+  u_muldiv_mult_125_S2_42_3/CO (SAEDRVT14_ADDF_V2_2)      0.05       5.47 r
+  u_muldiv_mult_125_S2_43_3/CO (SAEDRVT14_ADDF_V2_2)      0.08       5.55 r
+  u_muldiv_mult_125_S2_44_3/S (SAEDRVT14_ADDF_V2_2)       0.10       5.64 f
+  u_muldiv_mult_125_S2_45_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.71 f
+  u_muldiv_mult_125_S2_46_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.78 f
+  u_muldiv_mult_125_S2_47_2/CO (SAEDRVT14_ADDF_V1_2)      0.07       5.84 f
+  u_muldiv_mult_125_S2_48_2/S (SAEDRVT14_ADDF_V1_2)       0.10       5.95 r
+  u_muldiv_mult_125_S2_49_1/CO (SAEDRVT14_ADDF_V2_2)      0.09       6.04 r
+  u_muldiv_mult_125_S2_50_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.11 r
+  u_muldiv_mult_125_S2_51_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.17 r
+  u_muldiv_mult_125_S2_52_1/CO (SAEDRVT14_ADDF_V2_2)      0.08       6.26 r
+  u_muldiv_mult_125_S2_53_1/CO (SAEDRVT14_ADDF_V1_2)      0.07       6.32 r
+  u_muldiv_mult_125_S2_54_1/S (SAEDRVT14_ADDF_V1_2)       0.09       6.42 f
+  u_muldiv_mult_125_S1_55_0/S (SAEDRVT14_ADDF_V1_2)       0.11       6.52 r
+  U27402/X (SAEDRVT14_AO22_0P5)                           0.10       6.63 r
+  u_muldiv_mult_result_q_reg_23_/D (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.63 r
+  data arrival time                                                  6.63
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_mult_result_q_reg_23_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.06       6.59
+  data required time                                                 6.59
+  --------------------------------------------------------------------------
+  data required time                                                 6.59
+  data arrival time                                                 -6.63
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.03
+
+
+  Startpoint: u_decode_inst_q_reg_21_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_muldiv_divisor_q_reg_62_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_decode_inst_q_reg_21_/CK (SAEDRVT14_FDPRBQ_V2_1)      0.00 #     0.00 r
+  u_decode_inst_q_reg_21_/Q (SAEDRVT14_FDPRBQ_V2_1)       0.08       0.08 r
+  U26666/X (SAEDRVT14_INV_4)                              0.11       0.19 f
+  U29403/X (SAEDRVT14_BUF_S_1)                            0.23       0.42 f
+  U26640/X (SAEDRVT14_AN3_4)                              0.20       0.63 f
+  U29008/X (SAEDRVT14_ND2_CDC_1)                          0.14       0.77 r
+  U31429/CKOUTB (SAEDRVT14_CLKSPLT_1)                     0.10       0.87 f
+  U31129/X (SAEDRVT14_INV_S_8)                            0.05       0.92 r
+  U31130/X (SAEDRVT14_BUF_16)                             0.05       0.97 r
+  U26771/X (SAEDRVT14_BUF_3)                              0.14       1.11 r
+  U35103/X (SAEDRVT14_OAI22_0P5)                          0.19       1.31 f
+  U28801/X (SAEDRVT14_AOI21_0P5)                          0.16       1.46 r
+  U28901/X (SAEDRVT14_AN4_1)                              0.11       1.57 r
+  U44090/X (SAEDRVT14_AN4_1)                              0.08       1.65 r
+  U32097/X (SAEDRVT14_AO2BB2_4)                           0.06       1.71 f
+  U30778/X (SAEDRVT14_AOI21_0P5)                          0.09       1.80 r
+  U28423/X (SAEDRVT14_ND2_MM_2)                           0.06       1.86 f
+  U18890/X (SAEDRVT14_OR4_2)                              0.07       1.93 f
+  U26414/X (SAEDRVT14_INV_12)                             0.02       1.95 r
+  U26413/CKOUT (SAEDRVT14_CLKSPLT_8)                      0.04       1.99 r
+  U27230/X (SAEDRVT14_BUF_S_3)                            0.07       2.06 r
+  U27211/X (SAEDRVT14_BUF_S_0P75)                         0.70       2.76 r
+  U29662/X (SAEDRVT14_AN2_MM_1)                           0.19       2.95 r
+  U29660/X (SAEDRVT14_AN2_MM_1)                           0.12       3.07 r
+  U37503/X (SAEDRVT14_AN2_MM_1)                           0.12       3.19 r
+  U29659/X (SAEDRVT14_AN2_MM_1)                           0.12       3.31 r
+  U37504/X (SAEDRVT14_AN2_MM_1)                           0.12       3.42 r
+  U34171/X (SAEDRVT14_AN2_MM_1)                           0.12       3.54 r
+  U37505/X (SAEDRVT14_AN2_MM_1)                           0.12       3.66 r
+  U34448/X (SAEDRVT14_AN2_MM_1)                           0.12       3.78 r
+  U37506/X (SAEDRVT14_AN2_MM_1)                           0.12       3.90 r
+  U34420/X (SAEDRVT14_AN2_MM_1)                           0.12       4.02 r
+  U37220/X (SAEDRVT14_AN2_MM_1)                           0.12       4.14 r
+  U29661/X (SAEDRVT14_AN2_MM_1)                           0.12       4.26 r
+  U37221/X (SAEDRVT14_AN2_MM_1)                           0.12       4.37 r
+  U29654/X (SAEDRVT14_AN2_MM_1)                           0.12       4.49 r
+  U36559/X (SAEDRVT14_AN2_MM_1)                           0.12       4.61 r
+  U36554/X (SAEDRVT14_AN2_MM_1)                           0.12       4.73 r
+  U36558/X (SAEDRVT14_AN2_MM_1)                           0.12       4.85 r
+  U34395/X (SAEDRVT14_AN2_MM_1)                           0.12       4.97 r
+  U29657/X (SAEDRVT14_AN2_MM_1)                           0.12       5.08 r
+  U37488/X (SAEDRVT14_AN2_MM_1)                           0.12       5.21 r
+  U34896/X (SAEDRVT14_AN2_8)                              0.06       5.27 r
+  U28551/X (SAEDRVT14_AN2_2)                              0.06       5.33 r
+  U29655/X (SAEDRVT14_AN2_MM_1)                           0.11       5.43 r
+  U37489/X (SAEDRVT14_AN2_MM_1)                           0.12       5.55 r
+  U29651/X (SAEDRVT14_AN2_MM_1)                           0.12       5.67 r
+  U29653/X (SAEDRVT14_AN2_MM_1)                           0.12       5.79 r
+  U37490/X (SAEDRVT14_AN2_MM_1)                           0.12       5.91 r
+  U29652/X (SAEDRVT14_AN2_MM_1)                           0.12       6.03 r
+  U37487/X (SAEDRVT14_AN2_MM_1)                           0.12       6.14 r
+  U34169/X (SAEDRVT14_ND2_CDC_0P5)                        0.11       6.25 f
+  U39951/X (SAEDRVT14_EN2_1)                              0.09       6.34 f
+  U39950/X (SAEDRVT14_OA2BB2_V1_1)                        0.09       6.44 r
+  U39949/X (SAEDRVT14_OAI21_0P5)                          0.17       6.61 f
+  u_muldiv_divisor_q_reg_62_/D (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.61 f
+  data arrival time                                                  6.61
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_muldiv_divisor_q_reg_62_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.06       6.59
+  data required time                                                 6.59
+  --------------------------------------------------------------------------
+  data required time                                                 6.59
+  data arrival time                                                 -6.61
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.02
+
+
+  Startpoint: u_csr_csr_mpriv_q_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_csr_csr_mepc_q_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  riscv_core         16000                 saed14rvt_base_ss0p72v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_csr_csr_mpriv_q_reg_0_/CK (SAEDRVT14_FDPSBQ_1)        0.00 #     0.00 r
+  u_csr_csr_mpriv_q_reg_0_/Q (SAEDRVT14_FDPSBQ_1)         0.46       0.46 r
+  U31526/X (SAEDRVT14_INV_1)                              0.46       0.91 f
+  U31527/X (SAEDRVT14_BUF_S_1)                            0.29       1.21 f
+  U45432/X (SAEDRVT14_OAI21_0P5)                          0.18       1.39 r
+  U45431/X (SAEDRVT14_OR4_1)                              0.27       1.67 r
+  U29360/X (SAEDRVT14_INV_1)                              0.38       2.04 f
+  U34604/X (SAEDRVT14_NR2_MM_0P5)                         0.22       2.27 r
+  U29691/X (SAEDRVT14_OR4_1)                              0.25       2.51 r
+  U29742/X (SAEDRVT14_ND2_CDC_1)                          0.38       2.90 f
+  U38184/X (SAEDRVT14_AN2B_MM_1)                          0.24       3.14 r
+  U38183/X (SAEDRVT14_ND2B_0P75)                          0.62       3.76 f
+  U36268/X (SAEDRVT14_OAI21_V1_8)                         0.09       3.85 r
+  U36267/X (SAEDRVT14_OR4_2)                              0.10       3.95 r
+  U39876/X (SAEDRVT14_INV_1)                              0.19       4.14 f
+  U34454/X (SAEDRVT14_NR2_ECO_2)                          0.26       4.40 r
+  U38008/X (SAEDRVT14_ND2_CDC_1)                          0.59       4.99 f
+  U29728/X (SAEDRVT14_INV_S_2)                            0.46       5.45 r
+  U32501/X (SAEDRVT14_OR4_2)                              0.30       5.75 r
+  U34433/X (SAEDRVT14_AO21_4)                             0.17       5.92 r
+  U29357/X (SAEDRVT14_BUF_S_6)                            0.17       6.09 r
+  U34841/X (SAEDRVT14_AOI21_0P75)                         0.16       6.24 f
+  U34564/X (SAEDRVT14_OAI22_0P5)                          0.23       6.47 r
+  U30650/X (SAEDRVT14_OR4_1)                              0.15       6.62 r
+  u_csr_csr_mepc_q_reg_5_/D (SAEDRVT14_FDPRBQ_V2LP_1)     0.00       6.62 r
+  data arrival time                                                  6.62
+
+  clock clk (rise edge)                                   7.00       7.00
+  clock network delay (ideal)                             0.00       7.00
+  clock uncertainty                                      -0.35       6.65
+  u_csr_csr_mepc_q_reg_5_/CK (SAEDRVT14_FDPRBQ_V2LP_1)
+                                                          0.00       6.65 r
+  library setup time                                     -0.04       6.61
+  data required time                                                 6.61
+  --------------------------------------------------------------------------
+  data required time                                                 6.61
+  data arrival time                                                 -6.62
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+1
