@@ -1,5 +1,5 @@
 set corner {ss0p75v125c}
-set period 7 
+set period 9 
 create_clock -name clk [get_ports clk_i] -period ${period}
 set_false_path -from [get_ports rst_i]
 set_driving_cell -lib_cell SAEDRVT14_INV_4 [ all_inputs ]

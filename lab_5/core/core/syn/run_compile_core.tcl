@@ -3,6 +3,8 @@ set module riscv_core
 set outDir "./results"
 define_design_lib work -path ./WORK
 
+set timestamp [clock format [clock seconds] -format "%Y-%m-%d %H:%M:%S"]
+
 ####### Synopsys 14nm #######
 set target_library "/home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p72v125c.db"
 set link_library "/home/net/local/SAED14nm_EDK_08_2024/SAED14nm_EDK_STD_RVT/liberty/nldm/base/saed14rvt_base_ss0p72v125c.db" 
@@ -41,9 +43,9 @@ current_design $top
 
 ####### Compile and Optimize ####
 compile -area_effort high -boundary_optimization
-set_flatten true
-uniquify -force
-ungroup -flatten -all
+#set_flatten true
+#uniquify -force
+#ungroup -flatten -all
 compile -area_effort high -boundary_optimization -ungroup_all 
 change_names -rule verilog
 group_path -name reg2reg -from [all_registers] -to [all_registers]
@@ -53,5 +55,5 @@ write_sdc "./${outDir}/${module}.sdc"
 write -hierarchy -format ddc -output ./${outDir}/${module}.ddc
 ####### Design Reporting ##########
 report_timing -group reg2reg -max_paths 1000 -path_type full_clock_expanded -slack_lesser_than 0 > reg2reg_golden_timing.rpt
-report_qor > qor_report.rpt
-report_power > power_report.rpt
+report_qor > qor_report_$timestamp.rpt
+report_power > power_report_$timestamp.rpt
